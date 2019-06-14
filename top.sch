@@ -38,7 +38,6 @@
         <signal name="IO_clk" />
         <signal name="GPIOF0" />
         <signal name="CPU2IO(31:0)" />
-        <signal name="LED(7:0)" />
         <signal name="SW_OK(1),Div(19:18)" />
         <signal name="Disp_num(31:0)" />
         <signal name="point_out(7:0)" />
@@ -46,7 +45,6 @@
         <signal name="SEGMENT(7:0)" />
         <signal name="AN(3:0)" />
         <signal name="N0" />
-        <signal name="XLXN_61" />
         <signal name="Div(31:0)" />
         <signal name="Div(6)" />
         <signal name="Div(9)" />
@@ -78,6 +76,18 @@
         <signal name="led_clrn" />
         <signal name="XLXN_130" />
         <signal name="State(4:0)" />
+        <signal name="Div(1)" />
+        <signal name="Red(3:0)" />
+        <signal name="Green(3:0)" />
+        <signal name="Blue(3:0)" />
+        <signal name="HSYNC" />
+        <signal name="VSYNC" />
+        <signal name="LED(7:0)" />
+        <signal name="XLXN_151(11:0)" />
+        <signal name="XLXN_152(8:0)" />
+        <signal name="XLXN_153(9:0)" />
+        <signal name="PS2_clk" />
+        <signal name="PS2_data" />
         <port polarity="Input" name="RSTN" />
         <port polarity="Input" name="BTN_y(3:0)" />
         <port polarity="Output" name="BTN_x(4:0)" />
@@ -91,13 +101,20 @@
         <port polarity="Output" name="seg_clrn" />
         <port polarity="Input" name="clk_100mhz" />
         <port polarity="Output" name="Buzzer" />
-        <port polarity="Output" name="LED(7:0)" />
         <port polarity="Output" name="SEGMENT(7:0)" />
         <port polarity="Output" name="AN(3:0)" />
         <port polarity="Output" name="led_clk" />
         <port polarity="Output" name="led_sout" />
         <port polarity="Output" name="LED_PEN" />
         <port polarity="Output" name="led_clrn" />
+        <port polarity="Output" name="Red(3:0)" />
+        <port polarity="Output" name="Green(3:0)" />
+        <port polarity="Output" name="Blue(3:0)" />
+        <port polarity="Output" name="HSYNC" />
+        <port polarity="Output" name="VSYNC" />
+        <port polarity="Output" name="LED(7:0)" />
+        <port polarity="Input" name="PS2_clk" />
+        <port polarity="Input" name="PS2_data" />
         <blockdef name="SAnti_jitter">
             <timestamp>2016-2-25T15:53:0</timestamp>
             <rect style="linewidth:W;linecolor:rgb(0,0,255);fillcolor:rgb(170,255,255);fillstyle:Solid" width="300" x="64" y="-248" height="256" />
@@ -314,6 +331,53 @@
             <line x2="368" y1="-112" y2="-112" x1="400" />
             <line x2="368" y1="-160" y2="-160" style="linewidth:W" x1="400" />
         </blockdef>
+        <blockdef name="vgac">
+            <timestamp>2019-6-11T3:55:54</timestamp>
+            <rect width="256" x="64" y="-512" height="512" />
+            <line x2="0" y1="-480" y2="-480" x1="64" />
+            <line x2="0" y1="-256" y2="-256" x1="64" />
+            <rect width="64" x="0" y="-44" height="24" />
+            <line x2="0" y1="-32" y2="-32" x1="64" />
+            <line x2="384" y1="-480" y2="-480" x1="320" />
+            <line x2="384" y1="-416" y2="-416" x1="320" />
+            <line x2="384" y1="-352" y2="-352" x1="320" />
+            <rect width="64" x="320" y="-300" height="24" />
+            <line x2="384" y1="-288" y2="-288" x1="320" />
+            <rect width="64" x="320" y="-236" height="24" />
+            <line x2="384" y1="-224" y2="-224" x1="320" />
+            <rect width="64" x="320" y="-172" height="24" />
+            <line x2="384" y1="-160" y2="-160" x1="320" />
+            <rect width="64" x="320" y="-108" height="24" />
+            <line x2="384" y1="-96" y2="-96" x1="320" />
+            <rect width="64" x="320" y="-44" height="24" />
+            <line x2="384" y1="-32" y2="-32" x1="320" />
+        </blockdef>
+        <blockdef name="GPU">
+            <timestamp>2019-6-14T15:15:15</timestamp>
+            <rect width="352" x="64" y="-256" height="256" />
+            <line x2="0" y1="-224" y2="-224" x1="64" />
+            <rect width="64" x="0" y="-172" height="24" />
+            <line x2="0" y1="-160" y2="-160" x1="64" />
+            <rect width="64" x="0" y="-108" height="24" />
+            <line x2="0" y1="-96" y2="-96" x1="64" />
+            <rect width="64" x="0" y="-44" height="24" />
+            <line x2="0" y1="-32" y2="-32" x1="64" />
+            <rect width="64" x="416" y="-236" height="24" />
+            <line x2="480" y1="-224" y2="-224" x1="416" />
+            <rect width="64" x="416" y="-44" height="24" />
+            <line x2="480" y1="-32" y2="-32" x1="416" />
+        </blockdef>
+        <blockdef name="ps2">
+            <timestamp>2019-6-14T15:47:3</timestamp>
+            <rect width="256" x="64" y="-256" height="256" />
+            <line x2="0" y1="-224" y2="-224" x1="64" />
+            <line x2="0" y1="-160" y2="-160" x1="64" />
+            <line x2="0" y1="-96" y2="-96" x1="64" />
+            <line x2="0" y1="-32" y2="-32" x1="64" />
+            <line x2="384" y1="-224" y2="-224" x1="320" />
+            <rect width="64" x="320" y="-44" height="24" />
+            <line x2="384" y1="-32" y2="-32" x1="320" />
+        </blockdef>
         <block symbolname="SAnti_jitter" name="U9">
             <blockpin signalname="SW(15:0)" name="SW(15:0)" />
             <blockpin signalname="readn" name="readn" />
@@ -452,15 +516,6 @@
             <blockpin signalname="SW_OK(0)" name="SW0" />
             <blockpin signalname="Disp_num(31:0)" name="Hexs(31:0)" />
         </block>
-        <block symbolname="PIO" name="U71">
-            <blockpin signalname="IO_clk" name="clk" />
-            <blockpin signalname="rst" name="rst" />
-            <blockpin signalname="GPIOF0" name="EN" />
-            <blockpin signalname="CPU2IO(31:0)" name="PData_in(31:0)" />
-            <blockpin name="GPIOf0(21:0)" />
-            <blockpin signalname="LED(7:0)" name="LED_out(7:0)" />
-            <blockpin name="counter_set(1:0)" />
-        </block>
         <block symbolname="buf" name="XLXI_15">
             <blockpin signalname="V5" name="I" />
             <blockpin signalname="Buzzer" name="O" />
@@ -484,6 +539,44 @@
             <blockpin signalname="V5" name="MIO_ready" />
             <blockpin name="CPU_MIO" />
             <blockpin signalname="State(4:0)" name="state(4:0)" />
+        </block>
+        <block symbolname="vgac" name="VGA">
+            <blockpin signalname="Div(1)" name="vga_clk" />
+            <blockpin signalname="rst" name="clrn" />
+            <blockpin signalname="XLXN_151(11:0)" name="d_in(11:0)" />
+            <blockpin name="rdn" />
+            <blockpin signalname="HSYNC" name="hs" />
+            <blockpin signalname="VSYNC" name="vs" />
+            <blockpin signalname="XLXN_152(8:0)" name="row_addr(8:0)" />
+            <blockpin signalname="XLXN_153(9:0)" name="col_addr(9:0)" />
+            <blockpin signalname="Red(3:0)" name="r(3:0)" />
+            <blockpin signalname="Green(3:0)" name="g(3:0)" />
+            <blockpin signalname="Blue(3:0)" name="b(3:0)" />
+        </block>
+        <block symbolname="PIO" name="U71">
+            <blockpin signalname="IO_clk" name="clk" />
+            <blockpin signalname="rst" name="rst" />
+            <blockpin signalname="GPIOF0" name="EN" />
+            <blockpin signalname="CPU2IO(31:0)" name="PData_in(31:0)" />
+            <blockpin name="GPIOf0(21:0)" />
+            <blockpin signalname="LED(7:0)" name="LED_out(7:0)" />
+            <blockpin name="counter_set(1:0)" />
+        </block>
+        <block symbolname="GPU" name="GPU">
+            <blockpin signalname="Div(1)" name="clk" />
+            <blockpin signalname="XLXN_152(8:0)" name="row(8:0)" />
+            <blockpin signalname="XLXN_153(9:0)" name="col(9:0)" />
+            <blockpin name="vram_data(11:0)" />
+            <blockpin name="vram_addr(17:0)" />
+            <blockpin signalname="XLXN_151(11:0)" name="vga_data(11:0)" />
+        </block>
+        <block symbolname="ps2" name="PS2">
+            <blockpin signalname="clk_100mhz" name="clk" />
+            <blockpin signalname="rst" name="rst" />
+            <blockpin signalname="PS2_clk" name="ps2_clk" />
+            <blockpin signalname="PS2_data" name="ps2_data" />
+            <blockpin name="ready" />
+            <blockpin name="data_out(9:0)" />
         </block>
     </netlist>
     <sheet sheetnum="1" width="5440" height="3520">
@@ -628,9 +721,7 @@
             <wire x2="1648" y1="1056" y2="1520" x1="1648" />
             <wire x2="1776" y1="1520" y2="1520" x1="1648" />
             <wire x2="352" y1="1056" y2="2832" x1="352" />
-            <wire x2="400" y1="2832" y2="2832" x1="352" />
-            <wire x2="624" y1="2832" y2="2832" x1="400" />
-            <wire x2="736" y1="2832" y2="2832" x1="624" />
+            <wire x2="736" y1="2832" y2="2832" x1="352" />
             <wire x2="704" y1="368" y2="480" x1="704" />
             <wire x2="816" y1="480" y2="480" x1="704" />
             <wire x2="704" y1="480" y2="848" x1="704" />
@@ -668,9 +759,6 @@
         <instance x="3856" y="656" name="U61" orien="R0">
             <attrtext style="fontsize:28;fontname:Arial" attrname="InstName" x="192" y="-32" type="instance" />
         </instance>
-        <instance x="3584" y="2992" name="U71" orien="R0">
-            <attrtext style="fontsize:28;fontname:Arial" attrname="InstName" x="176" y="-192" type="instance" />
-        </instance>
         <branch name="V5">
             <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="656" y="3184" type="branch" />
             <wire x2="1056" y1="3184" y2="3184" x1="656" />
@@ -680,26 +768,6 @@
             <wire x2="1376" y1="3184" y2="3184" x1="1280" />
         </branch>
         <iomarker fontsize="28" x="1376" y="3184" name="Buzzer" orien="R0" />
-        <branch name="IO_clk">
-            <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="3392" y="2768" type="branch" />
-            <wire x2="3616" y1="2768" y2="2768" x1="3392" />
-        </branch>
-        <branch name="rst">
-            <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="3392" y="2832" type="branch" />
-            <wire x2="3616" y1="2832" y2="2832" x1="3392" />
-        </branch>
-        <branch name="GPIOF0">
-            <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="3392" y="2896" type="branch" />
-            <wire x2="3616" y1="2896" y2="2896" x1="3392" />
-        </branch>
-        <branch name="CPU2IO(31:0)">
-            <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="3392" y="2960" type="branch" />
-            <wire x2="3616" y1="2960" y2="2960" x1="3392" />
-        </branch>
-        <branch name="LED(7:0)">
-            <wire x2="4256" y1="2864" y2="2864" x1="4064" />
-        </branch>
-        <iomarker fontsize="28" x="4256" y="2864" name="LED(7:0)" orien="R0" />
         <branch name="SW_OK(1),Div(19:18)">
             <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="3744" y="448" type="branch" />
             <wire x2="3856" y1="448" y2="448" x1="3744" />
@@ -853,8 +921,7 @@
         </branch>
         <branch name="PC(31:0)">
             <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="496" y="1920" type="branch" />
-            <wire x2="528" y1="1920" y2="1920" x1="496" />
-            <wire x2="720" y1="1920" y2="1920" x1="528" />
+            <wire x2="720" y1="1920" y2="1920" x1="496" />
         </branch>
         <branch name="XLXN_78(9:0)">
             <wire x2="704" y1="2544" y2="2640" x1="704" />
@@ -885,8 +952,7 @@
         <branch name="XLXN_86">
             <wire x2="1424" y1="1536" y2="1536" x1="1168" />
             <wire x2="1424" y1="1536" y2="1776" x1="1424" />
-            <wire x2="1760" y1="1776" y2="1776" x1="1424" />
-            <wire x2="1776" y1="1776" y2="1776" x1="1760" />
+            <wire x2="1776" y1="1776" y2="1776" x1="1424" />
         </branch>
         <branch name="Addr_out(31:0)">
             <attrtext style="alignment:SOFT-BCENTER;fontsize:28;fontname:Arial" attrname="Name" x="1248" y="1600" type="branch" />
@@ -1039,9 +1105,7 @@
         </instance>
         <branch name="inst(31:0)">
             <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="496" y="1648" type="branch" />
-            <wire x2="512" y1="1648" y2="1648" x1="496" />
-            <wire x2="592" y1="1648" y2="1648" x1="512" />
-            <wire x2="720" y1="1648" y2="1648" x1="592" />
+            <wire x2="720" y1="1648" y2="1648" x1="496" />
         </branch>
         <branch name="State(4:0)">
             <wire x2="1248" y1="1872" y2="1872" x1="1168" />
@@ -1053,5 +1117,107 @@
             <wire x2="1184" y1="1968" y2="2048" x1="1184" />
             <wire x2="1216" y1="2048" y2="2048" x1="1184" />
         </branch>
+        <instance x="3856" y="2416" name="VGA" orien="R0">
+            <attrtext style="fontsize:28;fontname:Arial" attrname="InstName" x="160" y="-384" type="instance" />
+        </instance>
+        <branch name="Div(1)">
+            <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="3696" y="1936" type="branch" />
+            <wire x2="3856" y1="1936" y2="1936" x1="3696" />
+        </branch>
+        <branch name="Red(3:0)">
+            <wire x2="4368" y1="2256" y2="2256" x1="4240" />
+        </branch>
+        <iomarker fontsize="28" x="4368" y="2256" name="Red(3:0)" orien="R0" />
+        <branch name="Green(3:0)">
+            <wire x2="4368" y1="2320" y2="2320" x1="4240" />
+        </branch>
+        <branch name="Blue(3:0)">
+            <wire x2="4384" y1="2384" y2="2384" x1="4240" />
+        </branch>
+        <iomarker fontsize="28" x="4368" y="2320" name="Green(3:0)" orien="R0" />
+        <iomarker fontsize="28" x="4384" y="2384" name="Blue(3:0)" orien="R0" />
+        <branch name="rst">
+            <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="3696" y="2160" type="branch" />
+            <wire x2="3856" y1="2160" y2="2160" x1="3696" />
+        </branch>
+        <branch name="HSYNC">
+            <wire x2="4336" y1="2000" y2="2000" x1="4240" />
+        </branch>
+        <branch name="VSYNC">
+            <wire x2="4336" y1="2064" y2="2064" x1="4240" />
+        </branch>
+        <iomarker fontsize="28" x="4336" y="2000" name="HSYNC" orien="R0" />
+        <iomarker fontsize="28" x="4336" y="2064" name="VSYNC" orien="R0" />
+        <instance x="3680" y="320" name="U71" orien="R0">
+            <attrtext style="fontsize:28;fontname:Arial" attrname="InstName" x="176" y="-192" type="instance" />
+        </instance>
+        <branch name="IO_clk">
+            <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="3488" y="96" type="branch" />
+            <wire x2="3712" y1="96" y2="96" x1="3488" />
+        </branch>
+        <branch name="rst">
+            <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="3488" y="160" type="branch" />
+            <wire x2="3712" y1="160" y2="160" x1="3488" />
+        </branch>
+        <branch name="GPIOF0">
+            <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="3488" y="224" type="branch" />
+            <wire x2="3712" y1="224" y2="224" x1="3488" />
+        </branch>
+        <branch name="CPU2IO(31:0)">
+            <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="3488" y="288" type="branch" />
+            <wire x2="3712" y1="288" y2="288" x1="3488" />
+        </branch>
+        <branch name="LED(7:0)">
+            <wire x2="4352" y1="192" y2="192" x1="4160" />
+        </branch>
+        <iomarker fontsize="28" x="4352" y="192" name="LED(7:0)" orien="R0" />
+        <instance x="3808" y="1648" name="GPU" orien="R0">
+            <attrtext style="fontsize:28;fontname:Arial" attrname="InstName" x="224" y="-160" type="instance" />
+        </instance>
+        <branch name="XLXN_151(11:0)">
+            <wire x2="3776" y1="1840" y2="2384" x1="3776" />
+            <wire x2="3856" y1="2384" y2="2384" x1="3776" />
+            <wire x2="4368" y1="1840" y2="1840" x1="3776" />
+            <wire x2="4368" y1="1616" y2="1616" x1="4288" />
+            <wire x2="4368" y1="1616" y2="1840" x1="4368" />
+        </branch>
+        <branch name="XLXN_152(8:0)">
+            <wire x2="4496" y1="1312" y2="1312" x1="3744" />
+            <wire x2="4496" y1="1312" y2="2128" x1="4496" />
+            <wire x2="3744" y1="1312" y2="1488" x1="3744" />
+            <wire x2="3808" y1="1488" y2="1488" x1="3744" />
+            <wire x2="4496" y1="2128" y2="2128" x1="4240" />
+        </branch>
+        <branch name="XLXN_153(9:0)">
+            <wire x2="3664" y1="1264" y2="1552" x1="3664" />
+            <wire x2="3808" y1="1552" y2="1552" x1="3664" />
+            <wire x2="4560" y1="1264" y2="1264" x1="3664" />
+            <wire x2="4560" y1="1264" y2="2192" x1="4560" />
+            <wire x2="4560" y1="2192" y2="2192" x1="4240" />
+        </branch>
+        <branch name="Div(1)">
+            <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="3552" y="1424" type="branch" />
+            <wire x2="3808" y1="1424" y2="1424" x1="3552" />
+        </branch>
+        <instance x="3168" y="3008" name="PS2" orien="R0">
+            <attrtext style="fontsize:28;fontname:Arial" attrname="InstName" x="160" y="-176" type="instance" />
+        </instance>
+        <branch name="clk_100mhz">
+            <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="3008" y="2784" type="branch" />
+            <wire x2="3168" y1="2784" y2="2784" x1="3008" />
+        </branch>
+        <branch name="rst">
+            <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="3008" y="2848" type="branch" />
+            <wire x2="3024" y1="2848" y2="2848" x1="3008" />
+            <wire x2="3168" y1="2848" y2="2848" x1="3024" />
+        </branch>
+        <branch name="PS2_clk">
+            <wire x2="3168" y1="2912" y2="2912" x1="3136" />
+        </branch>
+        <iomarker fontsize="28" x="3136" y="2912" name="PS2_clk" orien="R180" />
+        <branch name="PS2_data">
+            <wire x2="3168" y1="2976" y2="2976" x1="3136" />
+        </branch>
+        <iomarker fontsize="28" x="3136" y="2976" name="PS2_data" orien="R180" />
     </sheet>
 </drawing>

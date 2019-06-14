@@ -40,6 +40,11 @@ module MIO_BUS(input clk,
 					output reg GPIOe0000000_we,
 					output reg counter_we,
 					output reg[31:0]Peripheral_in
+					
+					input [9:0] ps2kb_key,
+					output reg vram_we,
+					output reg [11:0] vram_data,
+					output reg [17:0] vram_addr
 					);
 															
 endmodule
