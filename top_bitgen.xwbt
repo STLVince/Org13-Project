@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=D:\iseproj\Org\Project\top.ncd
+OUTFILE=D:\iseproj\Org\Project\top.bit
+FAMILY=Kintex7
+PART=xc7k160t-1fbg676
+WORKINGDIR=D:\iseproj\Org\Project
+LICENSE=WebPack
+USER_INFO=__0_0_0

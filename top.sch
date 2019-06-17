@@ -540,7 +540,7 @@
             <blockpin name="CPU_MIO" />
             <blockpin signalname="State(4:0)" name="state(4:0)" />
         </block>
-        <block symbolname="vgac" name="VGA">
+        <block symbolname="vgac" name="vga">
             <blockpin signalname="Div(1)" name="vga_clk" />
             <blockpin signalname="rst" name="clrn" />
             <blockpin signalname="XLXN_151(11:0)" name="d_in(11:0)" />
@@ -562,7 +562,7 @@
             <blockpin signalname="LED(7:0)" name="LED_out(7:0)" />
             <blockpin name="counter_set(1:0)" />
         </block>
-        <block symbolname="GPU" name="GPU">
+        <block symbolname="GPU" name="gpu_d">
             <blockpin signalname="Div(1)" name="clk" />
             <blockpin signalname="XLXN_152(8:0)" name="row(8:0)" />
             <blockpin signalname="XLXN_153(9:0)" name="col(9:0)" />
@@ -570,7 +570,7 @@
             <blockpin name="vram_addr(17:0)" />
             <blockpin signalname="XLXN_151(11:0)" name="vga_data(11:0)" />
         </block>
-        <block symbolname="ps2" name="PS2">
+        <block symbolname="ps2" name="ps2_d">
             <blockpin signalname="clk_100mhz" name="clk" />
             <blockpin signalname="rst" name="rst" />
             <blockpin signalname="PS2_clk" name="ps2_clk" />
@@ -750,9 +750,6 @@
             <wire x2="1296" y1="928" y2="1360" x1="1296" />
         </branch>
         <instance x="1584" y="960" name="XLXI_6" orien="R0" />
-        <instance x="736" y="2560" name="U3" orien="R0">
-            <attrtext style="fontsize:28;fontname:Arial" attrname="InstName" x="224" y="124" type="instance" />
-        </instance>
         <instance x="2832" y="1920" name="U5" orien="R0">
             <attrtext style="fontsize:28;fontname:Arial" attrname="InstName" x="240" y="-368" type="instance" />
         </instance>
@@ -923,32 +920,6 @@
             <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="496" y="1920" type="branch" />
             <wire x2="720" y1="1920" y2="1920" x1="496" />
         </branch>
-        <branch name="XLXN_78(9:0)">
-            <wire x2="704" y1="2544" y2="2640" x1="704" />
-            <wire x2="736" y1="2640" y2="2640" x1="704" />
-            <wire x2="1376" y1="2544" y2="2544" x1="704" />
-            <wire x2="1776" y1="2208" y2="2208" x1="1376" />
-            <wire x2="1376" y1="2208" y2="2544" x1="1376" />
-        </branch>
-        <branch name="XLXN_80(31:0)">
-            <wire x2="1408" y1="2704" y2="2704" x1="1184" />
-            <wire x2="1776" y1="2256" y2="2256" x1="1408" />
-            <wire x2="1408" y1="2256" y2="2704" x1="1408" />
-        </branch>
-        <branch name="XLXN_82(0:0)">
-            <wire x2="672" y1="2512" y2="2704" x1="672" />
-            <wire x2="736" y1="2704" y2="2704" x1="672" />
-            <wire x2="1344" y1="2512" y2="2512" x1="672" />
-            <wire x2="1776" y1="2160" y2="2160" x1="1344" />
-            <wire x2="1344" y1="2160" y2="2512" x1="1344" />
-        </branch>
-        <branch name="XLXN_84(31:0)">
-            <wire x2="640" y1="2480" y2="2784" x1="640" />
-            <wire x2="736" y1="2784" y2="2784" x1="640" />
-            <wire x2="1312" y1="2480" y2="2480" x1="640" />
-            <wire x2="1776" y1="2112" y2="2112" x1="1312" />
-            <wire x2="1312" y1="2112" y2="2480" x1="1312" />
-        </branch>
         <branch name="XLXN_86">
             <wire x2="1424" y1="1536" y2="1536" x1="1168" />
             <wire x2="1424" y1="1536" y2="1776" x1="1424" />
@@ -1117,7 +1088,7 @@
             <wire x2="1184" y1="1968" y2="2048" x1="1184" />
             <wire x2="1216" y1="2048" y2="2048" x1="1184" />
         </branch>
-        <instance x="3856" y="2416" name="VGA" orien="R0">
+        <instance x="3856" y="2416" name="vga" orien="R0">
             <attrtext style="fontsize:28;fontname:Arial" attrname="InstName" x="160" y="-384" type="instance" />
         </instance>
         <branch name="Div(1)">
@@ -1171,7 +1142,7 @@
             <wire x2="4352" y1="192" y2="192" x1="4160" />
         </branch>
         <iomarker fontsize="28" x="4352" y="192" name="LED(7:0)" orien="R0" />
-        <instance x="3808" y="1648" name="GPU" orien="R0">
+        <instance x="3808" y="1648" name="gpu_d" orien="R0">
             <attrtext style="fontsize:28;fontname:Arial" attrname="InstName" x="224" y="-160" type="instance" />
         </instance>
         <branch name="XLXN_151(11:0)">
@@ -1199,7 +1170,7 @@
             <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="3552" y="1424" type="branch" />
             <wire x2="3808" y1="1424" y2="1424" x1="3552" />
         </branch>
-        <instance x="3168" y="3008" name="PS2" orien="R0">
+        <instance x="3168" y="3008" name="ps2_d" orien="R0">
             <attrtext style="fontsize:28;fontname:Arial" attrname="InstName" x="160" y="-176" type="instance" />
         </instance>
         <branch name="clk_100mhz">
@@ -1219,5 +1190,38 @@
             <wire x2="3168" y1="2976" y2="2976" x1="3136" />
         </branch>
         <iomarker fontsize="28" x="3136" y="2976" name="PS2_data" orien="R180" />
+        <branch name="XLXN_84(31:0)">
+            <wire x2="1312" y1="2480" y2="2480" x1="640" />
+            <wire x2="640" y1="2480" y2="2784" x1="640" />
+            <wire x2="736" y1="2784" y2="2784" x1="640" />
+            <wire x2="1760" y1="2112" y2="2112" x1="1312" />
+            <wire x2="1776" y1="2112" y2="2112" x1="1760" />
+            <wire x2="1312" y1="2112" y2="2480" x1="1312" />
+        </branch>
+        <branch name="XLXN_82(0:0)">
+            <wire x2="1344" y1="2512" y2="2512" x1="672" />
+            <wire x2="672" y1="2512" y2="2704" x1="672" />
+            <wire x2="736" y1="2704" y2="2704" x1="672" />
+            <wire x2="1760" y1="2160" y2="2160" x1="1344" />
+            <wire x2="1776" y1="2160" y2="2160" x1="1760" />
+            <wire x2="1344" y1="2160" y2="2512" x1="1344" />
+        </branch>
+        <branch name="XLXN_78(9:0)">
+            <wire x2="1376" y1="2544" y2="2544" x1="704" />
+            <wire x2="704" y1="2544" y2="2640" x1="704" />
+            <wire x2="736" y1="2640" y2="2640" x1="704" />
+            <wire x2="1760" y1="2208" y2="2208" x1="1376" />
+            <wire x2="1776" y1="2208" y2="2208" x1="1760" />
+            <wire x2="1376" y1="2208" y2="2544" x1="1376" />
+        </branch>
+        <branch name="XLXN_80(31:0)">
+            <wire x2="1408" y1="2704" y2="2704" x1="1184" />
+            <wire x2="1760" y1="2256" y2="2256" x1="1408" />
+            <wire x2="1776" y1="2256" y2="2256" x1="1760" />
+            <wire x2="1408" y1="2256" y2="2704" x1="1408" />
+        </branch>
+        <instance x="736" y="2560" name="U3" orien="R0">
+            <attrtext style="fontsize:28;fontname:Arial" attrname="InstName" x="224" y="124" type="instance" />
+        </instance>
     </sheet>
 </drawing>

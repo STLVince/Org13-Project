@@ -1,0 +1,28 @@
+
+
+
+// Instantiate the module
+MEMBANK instance_name (
+    .clk(clk), 
+    .rst(rst), 
+    .Start(Start), 
+    .PROG(PROG), 
+    .clkm(clkm), 
+    .WR(WR), 
+    .enm(enm), 
+    .Addr(Addr), 
+    .MDi(MDi), 
+    .halfPeriod(halfPeriod), 
+    .RXD(RXD), 
+    .TXD(TXD), 
+    .TxEnd(TxEnd), 
+    .mclk(mclk), 
+    .MWR(MWR), 
+    .MEN(MEN), 
+    .MAddr(MAddr), 
+    .MBDi(MBDi), 
+    .MDo(MDo), 
+    .TESTD(TESTD)
+    );
+
+
