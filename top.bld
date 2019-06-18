@@ -2,7 +2,7 @@ Release 14.7 ngdbuild P.20131013 (nt64)
 Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
 Command Line: C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\ngdbuild.exe
--intstyle ise -dd _ngo -sd ipcore_dir -sd Code/MEMBANK -nt timestamp -uc ok.ucf
+-intstyle ise -dd _ngo -sd Code/MEMBANK -sd ipcore_dir -nt timestamp -uc ok.ucf
 -p xc7k160t-fbg676-1 top.ngc top.ngd
 
 Reading NGO file "D:/iseproj/Org/Project/top.ngc" ...
@@ -46,10 +46,10 @@ NGDBUILD Design Results Summary:
   Number of errors:     0
   Number of warnings:   2
 
-Total memory usage is 4791368 kilobytes
+Total memory usage is 4788356 kilobytes
 
 Writing NGD file "top.ngd" ...
-Total REAL time to NGDBUILD completion:  46 sec
-Total CPU time to NGDBUILD completion:   46 sec
+Total REAL time to NGDBUILD completion: 1 min  9 sec
+Total CPU time to NGDBUILD completion:  1 min  8 sec
 
 Writing NGDBUILD log file "top.bld"...

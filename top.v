@@ -89,36 +89,17 @@ Multi_CPU U1		(.clk(Clk_CPU), .reset(rst), .inst_out(inst), .INT(counter0_out), 
 //MEMBANK U3	 		(.clk(clk_100mhz), .rst(rst), .Start(SW_OK[13]), .PROG(SW_OK[14]), .clkm(~clk_100mhz), .WR(data_ram_we), 
 //						.enm(), Addr({0,0,ram_addr}), .MDi(ram_data_in), .halfPeriod(9'd433), .RXD(RXD), .TXD(TXD), 
 //						.TxEnd(), .mclk(), .MWR(), .MEN(), .MAddr(), .MBDi(), .MDo(ram_data_out), .TESTD());
-MEMBANK U31 (
-    .clk(clk_100mhz), 
-    .rst(rst), 
-    .Start(SW_OK[13]), 
-    .PROG(SW_OK[14]), 
-    .clkm(~clk_100mhz), 
-    .WR(data_ram_we), 
-    .enm(), 
-    .Addr({0,0,ram_addr}), 
-    .MDi(MDi), 
-    .halfPeriod(9'd433), 
-    .RXD(RXD), 
-    .TXD(TXD), 
-    .TxEnd(), 
-    .mclk(), 
-    .MWR(), 
-    .MEN(), 
-    .MAddr(), 
-    .MBDi(), 
-    .MDo(ram_data_out), 
-    .TESTD()
-    );
+MEMBANK U31 		(.clk(clk_100mhz), .rst(rst), .Start(SW_OK[13]), .PROG(SW_OK[14]), .clkm(~clk_100mhz), .WR(data_ram_we), 
+						.enm(), .Addr({0,0,ram_addr}), .MDi(MDi), .halfPeriod(9'd433), .RXD(RXD), .TXD(TXD), .TxEnd(), .mclk(), 
+						.MWR(), .MEN(), .MAddr(), .MBDi(), .MDo(ram_data_out), .TESTD());
 
 Counter_x U10			(.clk(IO_clk), .rst(rst), .clk0(Div[6]), .clk1(Div[9]), .clk2(Div[11]), .counter_we(counter_we), 
 						.counter_val(CPU2IO), .counter_ch(counter_ch), .counter0_OUT(counter0_out), .counter1_OUT(counter1_out), 
 						.counter2_OUT(counter2_out), .counter_out(Counter_out));
 						
-Multi_8CH32 U5		(.clk(IO_clk), .rst(rst), .EN(GPIOe0000000_we), .Test(SW_OK[7:5]), .point_in({Div,Div}), .LES({64{1'b0}}), 
+Multi_8CH32 U5		(.clk(IO_clk), .rst(rst), .EN(GPIOe0000000_we), .Test(SW_OK[7:5]), .point_in({Div[31:0],Div[31:13],State[4:0],8'b00000000}), .LES({64{1'b0}}), 
 						.Data0(CPU2IO), .data1({N0,N0,PC[31:2]}), .data2(inst), .data3(Counter_out), .data4(Addr_out), .data5(Data_out), 
-						.data6(Data_in), .data7({{22{N0}},PS2_key}), .Disp_num(Disp_num), .point_out(point_out), .LE_out(LE_out));
+						.data6(Data_in), .data7(PC), .Disp_num(Disp_num), .point_out(point_out), .LE_out(LE_out));
 						
 SPIO U7				(.clk(IO_clk),.rst(rst),.EN(GPIOF0),.Start(Div[20]),.GPIOf0(),.P_Data(CPU2IO),
 						.counter_set(counter_ch),.LED_out(LED_out),.led_clk(led_clk),.led_sout(led_sout),.LED_PEN(LED_PEN),

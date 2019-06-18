@@ -7,11 +7,11 @@
 // \   \   \/     Version : 14.7
 //  \   \         Application : sch2hdl
 //  /   /         Filename : Multi_CPU.vf
-// /___/   /\     Timestamp : 05/21/2019 14:50:55
+// /___/   /\     Timestamp : 06/18/2019 13:10:12
 // \   \  /  \ 
 //  \___\/\___\ 
 //
-//Command: sch2hdl -sympath D:/iseproj/Org/OExp09-IP2MCPU/ipcore_dir -intstyle ise -family kintex7 -verilog D:/iseproj/Org/OExp09-IP2MCPU/Multi_CPU.vf -w D:/iseproj/Org/OExp09-IP2MCPU/Multi_CPU.sch
+//Command: sch2hdl -sympath D:/iseproj/Org/Project/Code/MEMBANK -sympath D:/iseproj/Org/Project/ipcore_dir -intstyle ise -family kintex7 -verilog D:/iseproj/Org/Project/Multi_CPU.vf -w D:/iseproj/Org/Project/Multi_CPU.sch
 //Design Name: Multi_CPU
 //Device: kintex7
 //Purpose:

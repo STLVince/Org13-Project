@@ -61,7 +61,7 @@ module MIO_BUS(input clk,
 	reg data_ram_rd, GPIOf0000000_rd, GPIOe0000000_rd, counter_rd, ps2kb_rd, background_rd, character_rd, ci_rd, wall_rd;
 	wire counter_over; 
 
-	always@(posedge clk) begin
+	always@* begin
 		data_ram_we = 0; 
 		data_ram_rd = 0; 
 		counter_we = 0; 
@@ -70,7 +70,7 @@ module MIO_BUS(input clk,
 		GPIOe0000000_we = 0; //Counter_x写
 		GPIOf0000000_rd = 0; //SW读
 		GPIOe0000000_rd = 0; //七段数码管写
-		ram_addr = 13'h0; //RAM_B
+		ram_addr = 10'h0; //RAM_B
 		ram_data_in = 32'h0; //RAM_B输入数据
 		Peripheral_in=32'h0; //CPU输出，外设写
 		ps2kb_rd = 0; //keyborad
@@ -88,7 +88,7 @@ module MIO_BUS(input clk,
 		case(addr_bus[31:28])
 		4'h0:begin 
 				data_ram_we = mem_w;
-				ram_addr = addr_bus[14:2];
+				ram_addr = addr_bus[11:2];
 				ram_data_in = Cpu_data2bus;
 				data_ram_rd = ~mem_w;
 		end
@@ -142,16 +142,16 @@ module MIO_BUS(input clk,
 always @* begin
 	Cpu_data4bus = 32'h0;
 		casex({data_ram_rd,GPIOe0000000_rd,counter_rd,GPIOf0000000_rd, ps2kb_rd, background_rd, character_rd, ci_rd, wall_rd})
-			8'b1xxxxxxxx:Cpu_data4bus = ram_data_out; //read from RAM
-			8'bx1xxxxxxx:Cpu_data4bus = counter_out;  //read from Counter
-			8'bxx1xxxxxx:Cpu_data4bus = counter_out;  //read from Counter
-			8'bxxx1xxxxx:Cpu_data4bus = {counter0_out,counter1_out,counter2_out,led_out[12:0],SW}; //read from SW & BTN
-			8'bxxxx1xxxx:Cpu_data4bus = {{22{1'b0}}, ps2kb_key}; //read from keyborad
+			9'b1xxxxxxxx:Cpu_data4bus = ram_data_out; //read from RAM
+			9'bx1xxxxxxx:Cpu_data4bus = counter_out;  //read from Counter
+			9'bxx1xxxxxx:Cpu_data4bus = counter_out;  //read from Counter
+			9'bxxx1xxxxx:Cpu_data4bus = {counter0_out,counter1_out,counter2_out,led_out[12:0],SW}; //read from SW & BTN
+			9'bxxxx1xxxx:Cpu_data4bus = {{22{1'b0}}, ps2kb_key}; //read from keyborad
 			
-			8'bxxxxx1xxx:Cpu_data4bus = {{20{1'b0}}, background_data}; //read from background
-			8'bxxxxxx1xx:Cpu_data4bus = {{20{1'b0}}, character_data}; //read from character
-			8'bxxxxxxx1x:Cpu_data4bus = {{20{1'b0}}, ci_data}; //read from ci
-			8'bxxxxxxxx1:Cpu_data4bus = {{20{1'b0}}, wall_data}; //read from wall
+			9'bxxxxx1xxx:Cpu_data4bus = {{20{1'b0}}, background_data}; //read from background
+			9'bxxxxxx1xx:Cpu_data4bus = {{20{1'b0}}, character_data}; //read from character
+			9'bxxxxxxx1x:Cpu_data4bus = {{20{1'b0}}, ci_data}; //read from ci
+			9'bxxxxxxxx1:Cpu_data4bus = {{20{1'b0}}, wall_data}; //read from wall
 		endcase
 end
 															
