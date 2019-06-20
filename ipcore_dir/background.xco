@@ -1,7 +1,7 @@
 ##############################################################
 #
 # Xilinx Core Generator version 14.7
-# Date: Mon Jun 17 15:10:22 2019
+# Date: Thu Jun 20 15:06:59 2019
 #
 ##############################################################
 #
@@ -28,10 +28,10 @@ SET flowvendor = Other
 SET formalverification = false
 SET foundationsym = false
 SET implementationfiletype = Ngc
-SET package = fbg676
+SET package = ffg676
 SET removerpms = false
 SET simulationfiles = Behavioral
-SET speedgrade = -1
+SET speedgrade = -2l
 SET verilogsim = true
 SET vhdlsim = false
 # END Project Options
@@ -40,7 +40,7 @@ SELECT Distributed_Memory_Generator xilinx.com:ip:dist_mem_gen:7.2
 # END Select
 # BEGIN Parameters
 CSET ce_overrides=ce_overrides_sync_controls
-CSET coefficient_file=D:\iseproj\Org\Project\Code\Back_Ground.coe
+CSET coefficient_file=.\Back_Ground.coe
 CSET common_output_ce=false
 CSET common_output_clk=false
 CSET component_name=background
@@ -70,4 +70,4 @@ CSET sync_reset_qspo=false
 MISC pkg_timestamp=2012-11-21T20:07:40Z
 # END Extra information
 GENERATE
-# CRC: 12d84550
+# CRC:  b3a890b

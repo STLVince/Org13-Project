@@ -1,2 +1,0 @@
-vhdtdtfi -lang verilog -prj Project -o D:/iseproj/Org/Project/MEMBANK.tfi -lib work D:/iseproj/Org/Project/Code/MEMBANK//MEMBANK.v -module MEMBANK -template C:/Xilinx/14.7/ISE_DS/ISE//data/tfi.tft -deleteonerror 
-vhdtdtfi -lang verilog -prj Project -o D:/iseproj/Org/Project/MEMBANK.tfi -lib work D:/iseproj/Org/Project/Code/MEMBANK//MEMBANK.v -module MEMBANK -template C:/Xilinx/14.7/ISE_DS/ISE//data/tfi.tft -deleteonerror 

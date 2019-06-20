@@ -31,7 +31,7 @@ copy ..\example_design\RAM_B_exdes.ucf results\
 cd results
 
 echo 'Running ngdbuild'
-ngdbuild -p xc7k160t-fbg676-1 RAM_B_exdes
+ngdbuild -p xc7k160t-ffg676-2l RAM_B_exdes
 
 echo 'Running map'
 map RAM_B_exdes -o mapped.ncd  -pr i

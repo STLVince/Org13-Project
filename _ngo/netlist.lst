@@ -1,19 +1,16 @@
-D:\iseproj\Org\Project\top.ngc 1560869762
-D:\iseproj\Org\Project/SAnti_jitter.ngc 1456416120
-D:\iseproj\Org\Project/SEnter_2_32.ngc 1456416120
-D:\iseproj\Org\Project/SSeg7_Dev.ngc 1456416120
-ipcore_dir/VRAM.ngc 1560790407
-D:\iseproj\Org\Project/Multi_8CH32.ngc 1456416120
-D:\iseproj\Org\Project/SPIO.ngc 1456416120
-D:\iseproj\Org\Project/PIO.ngc 1456416120
-ipcore_dir/background.ngc 1560784292
-ipcore_dir/character.ngc 1560782477
-ipcore_dir/ci.ngc 1560784618
-ipcore_dir/wall.ngc 1560784469
-D:\iseproj\Org\Project/Seg7_Dev.ngc 1456416120
-Code/MEMBANK/BYTE2WORD.ngc 1557040768
-Code/MEMBANK/UARTER.ngc 1557040704
-ipcore_dir/RAM_B.ngc 1560848788
-D:\iseproj\Org\Project/M_datapath.ngc 1456563540
-D:\iseproj\Org\Project/ctrl.ngc 1456563540
+D:\ISE PROJECT\Project\top.ngc 1561045192
+D:\ISE PROJECT\Project/SAnti_jitter.ngc 1501728185
+D:\ISE PROJECT\Project/SEnter_2_32.ngc 1501728185
+D:\ISE PROJECT\Project/SSeg7_Dev.ngc 1456563540
+ipcore_dir/RAM_B.ngc 1561044716
+ipcore_dir/VRAM.ngc 1501728185
+D:\ISE PROJECT\Project/Multi_8CH32.ngc 1456563540
+D:\ISE PROJECT\Project/SPIO.ngc 1456563540
+D:\ISE PROJECT\Project/PIO.ngc 1501728185
+ipcore_dir/background.ngc 1561043294
+ipcore_dir/character.ngc 1561043445
+ipcore_dir/wall.ngc 1561043979
+D:\ISE PROJECT\Project/Seg7_Dev.ngc 1501728185
+D:\ISE PROJECT\Project/M_datapath.ngc 1456563540
+D:\ISE PROJECT\Project/ctrl.ngc 1456563540
 OK

@@ -31,7 +31,7 @@ copy ..\example_design\VRAM_exdes.ucf results\
 cd results
 
 echo 'Running ngdbuild'
-ngdbuild -p xc7k160t-fbg676-1 VRAM_exdes
+ngdbuild -p xc7k160t-ffg676-2l VRAM_exdes
 
 echo 'Running map'
 map VRAM_exdes -o mapped.ncd  -pr i

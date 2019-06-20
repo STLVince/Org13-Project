@@ -22,7 +22,7 @@
 *     devices, or systems.  Use in such applications are expressly             *
 *     prohibited.                                                              *
 *                                                                              *
-*     (c) Copyright 1995-2019 Xilinx, Inc.                                     *
+*     (c) Copyright 1995-2017 Xilinx, Inc.                                     *
 *     All rights reserved.                                                     *
 *******************************************************************************/
 
@@ -51,10 +51,10 @@ VRAM your_instance_name (
   .clka(clka), // input clka
   .wea(wea), // input [0 : 0] wea
   .addra(addra), // input [17 : 0] addra
-  .dina(dina), // input [15 : 0] dina
+  .dina(dina), // input [11 : 0] dina
   .clkb(clkb), // input clkb
   .addrb(addrb), // input [17 : 0] addrb
-  .doutb(doutb) // output [15 : 0] doutb
+  .doutb(doutb) // output [11 : 0] doutb
 );
 // INST_TAG_END ------ End INSTANTIATION Template ---------
 

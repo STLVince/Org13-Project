@@ -45,7 +45,7 @@
 # PART OF THIS FILE AT ALL TIMES.
 
 
-set device xc7k160tfbg676-1
+set device xc7k160tffg676-2l
 set projName VRAM
 set design VRAM
 set projDir [file dirname [info script]]

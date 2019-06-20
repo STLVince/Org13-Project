@@ -1,2 +1,0 @@
-vhdtdtfi -lib work D:/iseproj/Org/Project/CMIO_BUS.v -lang verilog -prj Project -o CMIO_BUS.spl -module CMIO_BUS -template C:/Xilinx/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
-spl2sym -intstyle ise -family kintex7 CMIO_BUS.spl D:/iseproj/Org/Project/CMIO_BUS.sym 

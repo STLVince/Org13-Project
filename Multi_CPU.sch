@@ -197,7 +197,6 @@
     <sheet sheetnum="1" width="3520" height="2720">
         <instance x="1792" y="1696" name="U1_2" orien="R0">
             <attrtext style="fontsize:28;fontname:Arial" attrname="InstName" x="256" y="-880" type="instance" />
-            <attrtext style="fontsize:28;fontname:Arial;displayformat:NAMEEQUALSVALUE" attrname="VeriModel" x="0" y="-1024" type="instance" />
         </instance>
         <instance x="928" y="1696" name="U11" orien="R0">
             <attrtext style="fontsize:28;fontname:Arial" attrname="InstName" x="192" y="-880" type="instance" />

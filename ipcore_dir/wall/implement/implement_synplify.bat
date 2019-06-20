@@ -66,7 +66,7 @@ copy ..\example_design\wall_exdes.ucf results\
 cd results
 
 echo 'Running ngdbuild'
-ngdbuild -p xc7k160t-fbg676-1 -sd ../../../ wall_exdes
+ngdbuild -p xc7k160t-ffg676-2l -sd ../../../ wall_exdes
 
 echo 'Running map'
 map wall_exdes -o mapped.ncd

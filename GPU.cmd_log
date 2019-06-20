@@ -1,2 +1,0 @@
-vhdtdtfi -lib work D:/iseproj/Org/Project/Code/GPU.v -lang verilog -prj Project -o GPU.spl -module GPU -template C:/Xilinx/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
-spl2sym -intstyle ise -family kintex7 GPU.spl D:/iseproj/Org/Project/GPU.sym 

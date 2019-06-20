@@ -4,7 +4,7 @@ run
 -ifn top.prj
 -ofn top
 -ofmt NGC
--p xc7k160t-1-fbg676
+-p xc7k160t-2L-ffg676
 -top top
 -opt_mode Speed
 -opt_level 1
@@ -15,7 +15,7 @@ run
 -rtlview Yes
 -glob_opt AllClockNets
 -read_cores YES
--sd {"Code/MEMBANK" "ipcore_dir"  }
+-sd {"ipcore_dir"  }
 -write_timing_constraints NO
 -cross_clock_analysis NO
 -hierarchy_separator /

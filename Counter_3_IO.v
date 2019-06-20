@@ -18,7 +18,7 @@
 // Additional Comments: 
 //
 //////////////////////////////////////////////////////////////////////////////////
-module Counter_x(input clk,
+module Counter(input clk,
 					input rst,
 					input clk0,
 					input clk1,

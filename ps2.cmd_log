@@ -1,2 +1,0 @@
-vhdtdtfi -lib work D:/iseproj/Org/Project/Code/ps2.v -lang verilog -prj Project -o ps2.spl -module ps2 -template C:/Xilinx/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
-spl2sym -intstyle ise -family kintex7 ps2.spl D:/iseproj/Org/Project/ps2.sym 

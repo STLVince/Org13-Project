@@ -22,7 +22,7 @@
 *     devices, or systems.  Use in such applications are expressly             *
 *     prohibited.                                                              *
 *                                                                              *
-*     (c) Copyright 1995-2019 Xilinx, Inc.                                     *
+*     (c) Copyright 1995-2017 Xilinx, Inc.                                     *
 *     All rights reserved.                                                     *
 *******************************************************************************/
 // You must compile the wrapper file VRAM.v when simulating
@@ -49,10 +49,10 @@ module VRAM(
 input clka;
 input [0 : 0] wea;
 input [17 : 0] addra;
-input [15 : 0] dina;
+input [11 : 0] dina;
 input clkb;
 input [17 : 0] addrb;
-output [15 : 0] doutb;
+output [11 : 0] doutb;
 
 // synthesis translate_off
 
@@ -95,8 +95,8 @@ output [15 : 0] doutb;
     .C_PRIM_TYPE(1),
     .C_READ_DEPTH_A(245760),
     .C_READ_DEPTH_B(245760),
-    .C_READ_WIDTH_A(16),
-    .C_READ_WIDTH_B(16),
+    .C_READ_WIDTH_A(12),
+    .C_READ_WIDTH_B(12),
     .C_RST_PRIORITY_A("CE"),
     .C_RST_PRIORITY_B("CE"),
     .C_RST_TYPE("SYNC"),
@@ -115,8 +115,8 @@ output [15 : 0] doutb;
     .C_WRITE_DEPTH_B(245760),
     .C_WRITE_MODE_A("WRITE_FIRST"),
     .C_WRITE_MODE_B("WRITE_FIRST"),
-    .C_WRITE_WIDTH_A(16),
-    .C_WRITE_WIDTH_B(16),
+    .C_WRITE_WIDTH_A(12),
+    .C_WRITE_WIDTH_B(12),
     .C_XDEVICEFAMILY("kintex7")
   )
   inst (

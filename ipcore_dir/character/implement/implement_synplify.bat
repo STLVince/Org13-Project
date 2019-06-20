@@ -66,7 +66,7 @@ copy ..\example_design\character_exdes.ucf results\
 cd results
 
 echo 'Running ngdbuild'
-ngdbuild -p xc7k160t-fbg676-1 -sd ../../../ character_exdes
+ngdbuild -p xc7k160t-ffg676-2l -sd ../../../ character_exdes
 
 echo 'Running map'
 map character_exdes -o mapped.ncd
