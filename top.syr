@@ -4,13 +4,13 @@ Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.39 secs
+Total CPU time to Xst completion: 0.34 secs
  
 --> Parameter xsthdpdir set to xst
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.40 secs
+Total CPU time to Xst completion: 0.35 secs
  
 --> Reading design: top.prj
 
@@ -165,8 +165,8 @@ Parsing module <top>.
 *                            HDL Elaboration                            *
 =========================================================================
 WARNING:HDLCompiler:1016 - "D:\iseproj\Org\Project\top.v" Line 84: Port CPU_MIO is not connected to this instance
-WARNING:HDLCompiler:327 - "D:\iseproj\Org\Project\top.v" Line 93: Concatenation with unsized literal; will interpret as 32 bits
-WARNING:HDLCompiler:1016 - "D:\iseproj\Org\Project\top.v" Line 111: Port counter_set is not connected to this instance
+WARNING:HDLCompiler:327 - "D:\iseproj\Org\Project\top.v" Line 90: Concatenation with unsized literal; will interpret as 32 bits
+WARNING:HDLCompiler:1016 - "D:\iseproj\Org\Project\top.v" Line 108: Port counter_set is not connected to this instance
 
 Elaborating module <top>.
 
@@ -210,7 +210,7 @@ WARNING:HDLCompiler:1499 - "D:\iseproj\Org\Project\Code\MEMBANK\BYTE2WORD.v" Lin
 Elaborating module <RAM_B>.
 WARNING:HDLCompiler:1499 - "D:\iseproj\Org\Project\ipcore_dir\RAM_B.v" Line 39: Empty module <RAM_B> remains a black box.
 WARNING:HDLCompiler:189 - "D:\iseproj\Org\Project\Code\MEMBANK\MEMBANK.v" Line 95: Size mismatch in connection of port <addra>. Formal port size is 10-bit while actual signal size is 12-bit.
-WARNING:HDLCompiler:189 - "D:\iseproj\Org\Project\top.v" Line 93: Size mismatch in connection of port <Addr>. Formal port size is 12-bit while actual signal size is 77-bit.
+WARNING:HDLCompiler:189 - "D:\iseproj\Org\Project\top.v" Line 90: Size mismatch in connection of port <Addr>. Formal port size is 12-bit while actual signal size is 77-bit.
 
 Elaborating module <Counter_x>.
 WARNING:HDLCompiler:1127 - "D:\iseproj\Org\Project\Counter_3_IO.v" Line 43: Assignment to M2 ignored, since the identifier is never used
@@ -229,14 +229,14 @@ Elaborating module <PIO>.
 WARNING:HDLCompiler:1499 - "D:\iseproj\Org\Project\PIO_IO.v" Line 21: Empty module <PIO> remains a black box.
 
 Elaborating module <MIO_BUS>.
-WARNING:HDLCompiler:1127 - "D:\iseproj\Org\Project\top.v" Line 114: Assignment to ram_data_in ignored, since the identifier is never used
-WARNING:HDLCompiler:189 - "D:\iseproj\Org\Project\top.v" Line 115: Size mismatch in connection of port <ram_addr>. Formal port size is 10-bit while actual signal size is 13-bit.
-WARNING:HDLCompiler:189 - "D:\iseproj\Org\Project\top.v" Line 118: Size mismatch in connection of port <vram_data>. Formal port size is 12-bit while actual signal size is 1-bit.
+WARNING:HDLCompiler:1127 - "D:\iseproj\Org\Project\top.v" Line 111: Assignment to ram_data_in ignored, since the identifier is never used
+WARNING:HDLCompiler:189 - "D:\iseproj\Org\Project\top.v" Line 112: Size mismatch in connection of port <ram_addr>. Formal port size is 10-bit while actual signal size is 13-bit.
+WARNING:HDLCompiler:189 - "D:\iseproj\Org\Project\top.v" Line 115: Size mismatch in connection of port <vram_data>. Formal port size is 12-bit while actual signal size is 1-bit.
 
 Elaborating module <VRAM>.
 WARNING:HDLCompiler:1499 - "D:\iseproj\Org\Project\ipcore_dir\VRAM.v" Line 39: Empty module <VRAM> remains a black box.
-WARNING:HDLCompiler:189 - "D:\iseproj\Org\Project\top.v" Line 126: Size mismatch in connection of port <dina>. Formal port size is 16-bit while actual signal size is 1-bit.
-WARNING:HDLCompiler:189 - "D:\iseproj\Org\Project\top.v" Line 127: Size mismatch in connection of port <doutb>. Formal port size is 16-bit while actual signal size is 1-bit.
+WARNING:HDLCompiler:189 - "D:\iseproj\Org\Project\top.v" Line 123: Size mismatch in connection of port <dina>. Formal port size is 16-bit while actual signal size is 1-bit.
+WARNING:HDLCompiler:189 - "D:\iseproj\Org\Project\top.v" Line 124: Size mismatch in connection of port <doutb>. Formal port size is 16-bit while actual signal size is 1-bit.
 
 Elaborating module <background>.
 WARNING:HDLCompiler:1499 - "D:\iseproj\Org\Project\ipcore_dir\background.v" Line 39: Empty module <background> remains a black box.
@@ -252,14 +252,14 @@ WARNING:HDLCompiler:1499 - "D:\iseproj\Org\Project\ipcore_dir\wall.v" Line 39: E
 
 Elaborating module <GPU>.
 WARNING:HDLCompiler:413 - "D:\iseproj\Org\Project\Code\GPU.v" Line 32: Result of 19-bit expression is truncated to fit in 18-bit target.
-WARNING:HDLCompiler:189 - "D:\iseproj\Org\Project\top.v" Line 137: Size mismatch in connection of port <row>. Formal port size is 9-bit while actual signal size is 1-bit.
+WARNING:HDLCompiler:189 - "D:\iseproj\Org\Project\top.v" Line 134: Size mismatch in connection of port <row>. Formal port size is 9-bit while actual signal size is 1-bit.
 
 Elaborating module <vgac>.
-WARNING:HDLCompiler:189 - "D:\iseproj\Org\Project\top.v" Line 140: Size mismatch in connection of port <d_in>. Formal port size is 12-bit while actual signal size is 1-bit.
+WARNING:HDLCompiler:189 - "D:\iseproj\Org\Project\top.v" Line 137: Size mismatch in connection of port <d_in>. Formal port size is 12-bit while actual signal size is 1-bit.
 
 Elaborating module <ps2>.
-WARNING:HDLCompiler:634 - "D:\iseproj\Org\Project\top.v" Line 93: Net <MDi> does not have a driver.
-WARNING:HDLCompiler:552 - "D:\iseproj\Org\Project\top.v" Line 92: Input port enm is not connected on this instance
+WARNING:HDLCompiler:634 - "D:\iseproj\Org\Project\top.v" Line 90: Net <MDi> does not have a driver.
+WARNING:HDLCompiler:552 - "D:\iseproj\Org\Project\top.v" Line 89: Input port enm is not connected on this instance
 
 =========================================================================
 *                           HDL Synthesis                               *
@@ -272,19 +272,19 @@ INFO:Xst:3210 - "D:\iseproj\Org\Project\top.v" line 78: Output port <Ai> of the 
 INFO:Xst:3210 - "D:\iseproj\Org\Project\top.v" line 78: Output port <Bi> of the instance <M4> is unconnected or connected to loadless signal.
 INFO:Xst:3210 - "D:\iseproj\Org\Project\top.v" line 78: Output port <blink> of the instance <M4> is unconnected or connected to loadless signal.
 INFO:Xst:3210 - "D:\iseproj\Org\Project\top.v" line 84: Output port <CPU_MIO> of the instance <U1> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "D:\iseproj\Org\Project\top.v" line 92: Output port <MAddr> of the instance <U31> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "D:\iseproj\Org\Project\top.v" line 92: Output port <MBDi> of the instance <U31> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "D:\iseproj\Org\Project\top.v" line 92: Output port <TESTD> of the instance <U31> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "D:\iseproj\Org\Project\top.v" line 92: Output port <TxEnd> of the instance <U31> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "D:\iseproj\Org\Project\top.v" line 92: Output port <mclk> of the instance <U31> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "D:\iseproj\Org\Project\top.v" line 92: Output port <MWR> of the instance <U31> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "D:\iseproj\Org\Project\top.v" line 92: Output port <MEN> of the instance <U31> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "D:\iseproj\Org\Project\top.v" line 104: Output port <GPIOf0> of the instance <U7> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "D:\iseproj\Org\Project\top.v" line 111: Output port <counter_set> of the instance <U71> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "D:\iseproj\Org\Project\top.v" line 111: Output port <GPIOf0> of the instance <U71> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "D:\iseproj\Org\Project\top.v" line 113: Output port <ram_data_in> of the instance <U4> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "D:\iseproj\Org\Project\top.v" line 140: Output port <rdn> of the instance <vga> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "D:\iseproj\Org\Project\top.v" line 143: Output port <ready> of the instance <ps2_2> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\iseproj\Org\Project\top.v" line 89: Output port <MAddr> of the instance <U31> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\iseproj\Org\Project\top.v" line 89: Output port <MBDi> of the instance <U31> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\iseproj\Org\Project\top.v" line 89: Output port <TESTD> of the instance <U31> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\iseproj\Org\Project\top.v" line 89: Output port <TxEnd> of the instance <U31> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\iseproj\Org\Project\top.v" line 89: Output port <mclk> of the instance <U31> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\iseproj\Org\Project\top.v" line 89: Output port <MWR> of the instance <U31> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\iseproj\Org\Project\top.v" line 89: Output port <MEN> of the instance <U31> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\iseproj\Org\Project\top.v" line 101: Output port <GPIOf0> of the instance <U7> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\iseproj\Org\Project\top.v" line 108: Output port <counter_set> of the instance <U71> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\iseproj\Org\Project\top.v" line 108: Output port <GPIOf0> of the instance <U71> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\iseproj\Org\Project\top.v" line 110: Output port <ram_data_in> of the instance <U4> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\iseproj\Org\Project\top.v" line 137: Output port <rdn> of the instance <vga> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\iseproj\Org\Project\top.v" line 140: Output port <ready> of the instance <ps2_2> is unconnected or connected to loadless signal.
 WARNING:Xst:653 - Signal <MDi> is used but never assigned. This sourceless signal will be automatically connected to value GND.
     Summary:
 	no macro.
@@ -805,7 +805,7 @@ Asynchronous Control Signals Information:
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------+-------+
 Control Signal                                                                                                                                                                                                                                                                | Buffer(FF name)                                                                                                                                  | Load  |
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------+-------+
-frame/N1(frame/XST_GND:G)                                                                                                                                                                                                                                                     | NONE(frame/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[48].ram.r/v6_init.ram/NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram)    | 364   |
+frame/N1(frame/XST_GND:G)                                                                                                                                                                                                                                                     | NONE(frame/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[61].ram.r/v6_init.ram/NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram)    | 364   |
 U31/MEM/N0(U31/MEM/XST_GND:G)                                                                                                                                                                                                                                                 | NONE(U31/MEM/U102/Mram_data)                                                                                                                     | 4     |
 U31/MEM/N1(U31/MEM/XST_VCC:P)                                                                                                                                                                                                                                                 | NONE(U31/MEM/U102/Mram_data)                                                                                                                     | 4     |
 U31/MEM/U102/BUS_0002(U31/MEM/U102/Mmux_BUS_000211:O)                                                                                                                                                                                                                         | NONE(U31/MEM/U102/Mram_data)                                                                                                                     | 2     |
@@ -870,7 +870,7 @@ All values displayed in nanoseconds (ns)
 =========================================================================
 Timing constraint: Default period analysis for Clock 'clk_100mhz'
   Clock period: 7.413ns (frequency: 134.903MHz)
-  Total number of paths / destination ports: 128780 / 9335
+  Total number of paths / destination ports: 129014 / 9335
 -------------------------------------------------------------------------
 Delay:               7.413ns (Levels of Logic = 13)
   Source:            U9/SW_OK_0 (FF)
@@ -976,7 +976,7 @@ Delay:               1.839ns (Levels of Logic = 2)
     ----------------------------------------  ------------
      FDCE_1:C->Q           2   0.289   0.745  counter_set_1 (counter_set<1>)
      end scope: 'U7:counter_set<1>'
-     LUT6:I0->O           33   0.053   0.552  U10/_n0091<1>11 (U10/_n0091<1>1)
+     LUT6:I0->O           33   0.053   0.552  U10/_n0096<1>11 (U10/_n0096<1>1)
      FDCE:CE                   0.200          U10/counter0_Lock_0
     ----------------------------------------
     Total                      1.839ns (0.542ns logic, 1.297ns route)
@@ -1242,7 +1242,7 @@ Offset:              7.684ns (Levels of Logic = 15)
 
 =========================================================================
 Timing constraint: Default OFFSET OUT AFTER for Clock 'Clk_CPU'
-  Total number of paths / destination ports: 1311697 / 8
+  Total number of paths / destination ports: 1310977 / 8
 -------------------------------------------------------------------------
 Offset:              11.246ns (Levels of Logic = 22)
   Source:            U1/U11/IorD (FF)
@@ -1286,7 +1286,7 @@ Offset:              11.246ns (Levels of Logic = 22)
 
 =========================================================================
 Timing constraint: Default OFFSET OUT AFTER for Clock 'clk_100mhz'
-  Total number of paths / destination ports: 5070 / 18
+  Total number of paths / destination ports: 5294 / 18
 -------------------------------------------------------------------------
 Offset:              8.009ns (Levels of Logic = 16)
   Source:            U9/SW_OK_8 (FF)
@@ -1448,12 +1448,12 @@ clk_100mhz     |    7.413|         |         |         |
 =========================================================================
 
 
-Total REAL time to Xst completion: 166.00 secs
-Total CPU time to Xst completion: 166.63 secs
+Total REAL time to Xst completion: 111.00 secs
+Total CPU time to Xst completion: 111.20 secs
  
 --> 
 
-Total memory usage is 4838752 kilobytes
+Total memory usage is 4854340 kilobytes
 
 Number of errors   :    0 (   0 filtered)
 Number of warnings :  140 (   0 filtered)
