@@ -1,0 +1,8 @@
+INTSTYLE=impact
+INFILE=D:\iseproj\Org\Project\impact.xsl
+OUTFILE=D:\iseproj\Org\Project\impact.xsl
+FAMILY=Single
+PART=Single
+WORKINGDIR=D:\iseproj\Org\Project
+LICENSE=iMPACT
+USER_INFO=iMPACT

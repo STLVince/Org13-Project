@@ -34,7 +34,7 @@ module MIO_BUS(input clk,
 					
 					output reg[31:0]Cpu_data4bus,				//write to CPU
 					output reg[31:0]ram_data_in,				//from CPU write to Memory
-					output reg[12:0]ram_addr,					//Memory Address signals
+					output reg[9:0]ram_addr,					//Memory Address signals
 					output reg data_ram_we,
 					output reg GPIOf0000000_we,				//PIO写/SW读
 					output reg GPIOe0000000_we,				//七段写
@@ -44,7 +44,7 @@ module MIO_BUS(input clk,
 					input [9:0] ps2kb_key,
 					output reg vram_we,
 					output reg [11:0] vram_data,
-					output reg [17:0] vram_addr,
+					output reg [18:0] vram_addr,
 					
 					input [11:0] background_data,
 					output reg [9:0] background_addr,
@@ -53,10 +53,13 @@ module MIO_BUS(input clk,
 					output reg [9:0] character_addr,
 					
 					input [11:0] wall_data,
-					output reg [9:0] wall_addr
+					output reg [9:0] wall_addr,
+					
+					input [11:0] cai_data,
+					output reg [16:0] cai_addr
 					);	
 
-	reg data_ram_rd, GPIOf0000000_rd, GPIOe0000000_rd, counter_rd, ps2kb_rd, background_rd, character_rd, wall_rd;
+	reg data_ram_rd, GPIOf0000000_rd, GPIOe0000000_rd, counter_rd, ps2kb_rd, background_rd, character_rd, wall_rd, cai_rd;
 	wire counter_over; //变量定义
 
 	always@(posedge clk) begin
@@ -68,7 +71,7 @@ module MIO_BUS(input clk,
 		GPIOe0000000_we = 0; //计数器：Counter_x写信号
 		GPIOf0000000_rd = 0; //设备3、4：SW等读信号
 		GPIOe0000000_rd = 0; //设备2：七段显示器写信号
-		ram_addr = 13'h0; //内存物理地址：RAM_B地址
+		ram_addr = 10'h0; //内存物理地址：RAM_B地址
 		ram_data_in = 32'h0; //内存写数据：RAM_B输入数据
 		Peripheral_in=32'h0; //外设总线：CPU输出，外设写入数据
 		ps2kb_rd = 0; //keyborad
@@ -78,13 +81,15 @@ module MIO_BUS(input clk,
 		character_addr = 10'h0;
 		wall_rd = 0;
 		wall_addr = 10'h0;
+		cai_rd = 0;
+		cai_addr = 17'h0;
 		vram_we = 0; //vga
 		vram_data = 12'h0;
-		vram_addr = 18'h0;
+		vram_addr = 19'h0;
 		case(addr_bus[31:28])
 		4'h0:begin // data_ram (00000000 - 00000ffc, actually lower 4KB RAM)
 				data_ram_we = mem_w;
-				ram_addr = addr_bus[14:2];
+				ram_addr = addr_bus[11:2];
 				ram_data_in = Cpu_data2bus;
 				data_ram_rd = ~mem_w;
 		end
@@ -107,7 +112,7 @@ module MIO_BUS(input clk,
 		end
 		4'hc:begin // vga
 				vram_we = mem_w;
-				vram_addr = addr_bus[17:0];
+				vram_addr = addr_bus[18:0];
 				vram_data = Cpu_data2bus[11:0];
 		end
 		4'hd:begin // keyborad
@@ -125,6 +130,10 @@ module MIO_BUS(input clk,
 				wall_rd = ~mem_w;
 				wall_addr = addr_bus[9:0];
 		end
+		4'h8:begin //cai
+				cai_rd = ~mem_w;
+				cai_addr = addr_bus[16:0];
+		end		
 			
 		default:begin;end
 		
@@ -133,16 +142,17 @@ module MIO_BUS(input clk,
 	
 always @* begin
 	Cpu_data4bus = 32'h0;
-		casex({data_ram_rd,GPIOe0000000_rd,counter_rd,GPIOf0000000_rd, ps2kb_rd, background_rd, character_rd, wall_rd})
-			8'b1xxxxxxx:Cpu_data4bus = ram_data_out; //read from RAM
-			8'bx1xxxxxx:Cpu_data4bus = counter_out;  //read from Counter
-			8'bxx1xxxxx:Cpu_data4bus = counter_out;  //read from Counter
-			8'bxxx1xxxx:Cpu_data4bus = {counter0_out,counter1_out,counter2_out,led_out[12:0],SW}; //read from SW & BTN
-			8'bxxxx1xxx:Cpu_data4bus = {{22{1'b0}}, ps2kb_key}; //read from keyborad
+		casex({data_ram_rd,GPIOe0000000_rd,counter_rd,GPIOf0000000_rd, ps2kb_rd, background_rd, character_rd, wall_rd, cai_rd})
+			9'b1xxxxxxxx:Cpu_data4bus = ram_data_out; //read from RAM
+			9'bx1xxxxxxx:Cpu_data4bus = counter_out;  //read from Counter
+			9'bxx1xxxxxx:Cpu_data4bus = counter_out;  //read from Counter
+			9'bxxx1xxxxx:Cpu_data4bus = {counter0_out,counter1_out,counter2_out,led_out[12:0],SW}; //read from SW & BTN
+			9'bxxxx1xxxx:Cpu_data4bus = {{22{1'b0}}, ps2kb_key}; //read from keyborad
 			
-			8'bxxxxx1xx:Cpu_data4bus = {{20{1'b0}}, background_data}; //read from background
-			8'bxxxxxx1x:Cpu_data4bus = {{20{1'b0}}, character_data}; //read from character
-			8'bxxxxxxx1:Cpu_data4bus = {{20{1'b0}}, wall_data}; //read from wall
+			9'bxxxxx1xxx:Cpu_data4bus = {{20{1'b0}}, background_data}; //read from background
+			9'bxxxxxx1xx:Cpu_data4bus = {{20{1'b0}}, character_data}; //read from character
+			9'bxxxxxxx1x:Cpu_data4bus = {{20{1'b0}}, wall_data}; //read from wall
+			9'bxxxxxxxx1:Cpu_data4bus = {{20{1'b0}}, cai_data}; //read from cai
 		endcase
 end
 

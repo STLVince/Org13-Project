@@ -40,6 +40,8 @@ module top(						input clk_100mhz,
 									input PS2_clk,
 									input PS2_data,
 									output [3:0]Blue, Green, Red,
+									input RXD,
+									output TXD,
 									output HSYNC,
 									output VSYNC
     );
@@ -53,13 +55,14 @@ wire [4:0] Din, State;
 wire [7:0] blink, LE_out, point_out;
 wire [8:0] row;
 wire [9:0] PS2_key, col;
-wire [12:0] ram_addr;
+wire [9:0] ram_addr;
 wire [11:0] vga_data, vram_data_in, vram_data_out;
 wire [15:0] SW_OK, LED_out;
-wire [17:0] vram_r_addr, vram_w_addr;
+wire [18:0] vram_r_addr, vram_w_addr;
 wire [31:0] Div, Ai, Bi, Disp_num, inst, CPU2IO, PC, Addr_out, Data_in, Data_out, Counter_out, ram_data_in, ram_data_out;
-wire [11:0] background_data, character_data, wall_data;
+wire [11:0] background_data, character_data, wall_data, cai_data;
 wire [9:0] background_addr, character_addr, wall_addr;
+wire [16:0] cai_addr;
 //wire [31:0] location;
 
 SAnti_jitter U9	(.RSTN(RSTN), .clk(clk_100mhz), .Key_y(BTN_y), .Key_x(BTN_x), .SW(SW), .readn(readn),
@@ -82,7 +85,11 @@ SSeg7_Dev	U6		(.clk(clk_100mhz), .rst(rst), .Start(Div[20]), .SW0(SW_OK[0]), .fl
 Multi_CPU U1		(.clk(Clk_CPU), .reset(rst), .inst_out(inst), .INT(counter0_out), .PC_out(PC), .mem_w(mem_w), 
 						.Addr_out(Addr_out), .Data_in(Data_in), .Data_out(Data_out), .state(State), .MIO_ready(V5));
 
-RAM_B U3				(.addra(ram_addr), .wea(data_ram_we), .dina(ram_data_in), .clka(clk_100mhz), .douta(ram_data_out));
+//RAM_B U3				(.addra(ram_addr), .wea(data_ram_we), .dina(ram_data_in), .clka(clk_100mhz), .douta(ram_data_out));
+
+MEMBANK U31 		(.clk(clk_100mhz), .rst(rst), .Start(SW_OK[13]), .PROG(SW_OK[14]), .clkm(~clk_100mhz), .WR(data_ram_we), 
+						.enm(), .Addr({0,0,ram_addr}), .MDi(MDi), .halfPeriod(9'd433), .RXD(RXD), .TXD(TXD), .TxEnd(), .mclk(), 
+						.MWR(), .MEN(), .MAddr(), .MBDi(), .MDo(ram_data_out), .TESTD());
 
 Counter U10			(.clk(IO_clk), .rst(rst), .clk0(Div[6]), .clk1(Div[9]), .clk2(Div[11]), .counter_we(counter_we), 
 						.counter_val(CPU2IO), .counter_ch(counter_ch), .counter0_OUT(counter0_out), .counter1_OUT(counter1_out), 
@@ -111,14 +118,17 @@ MIO_BUS U4			(.clk(clk_100mhz), .rst(rst), .BTN(BTN_OK), .SW(SW_OK), .mem_w(mem_
 						.ps2kb_key(PS2_key), .vram_we(vram_we), .vram_data(vram_data_in), .vram_addr(vram_w_addr),
 						.background_data(background_data), .background_addr(background_addr),
 						.character_data(character_data), .character_addr(character_addr),
-						.wall_data(wall_data), .wall_addr(wall_addr)
+						.wall_data(wall_data), .wall_addr(wall_addr),
+						.cai_data(cai_data), .cai_addr(cai_addr)
 						);
 
 background back 	(.a(background_addr), .spo(background_data));
 					
 character player 	(.a(character_addr), .spo(character_data));
 
-wall walls			(.a(wall_addr), .spo(wall_data));	
+wall walls			(.a(wall_addr), .spo(wall_data));
+
+CAI death 			(.clka(clk_100mhz), .addra(cai_addr), .douta(cai_data));	
 
 VRAM frame 			(.clka(clk_100mhz), .wea(vram_we), .addra(vram_w_addr), .dina(vram_data_in), .clkb(Div[1]), 
 						.addrb(vram_r_addr), .doutb(vram_data_out));
