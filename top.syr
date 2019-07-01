@@ -4,13 +4,13 @@ Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.28 secs
+Total CPU time to Xst completion: 0.12 secs
  
 --> Parameter xsthdpdir set to xst
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.29 secs
+Total CPU time to Xst completion: 0.12 secs
  
 --> Reading design: top.prj
 
@@ -100,7 +100,7 @@ Auto BRAM Packing                  : NO
 Slice Utilization Ratio Delta      : 5
 
 ---- Other Options
-Cores Search Directories           : {"ipcore_dir" "Code/MEMBANK"  }
+Cores Search Directories           : {"Code/MEMBANK" "ipcore_dir"  }
 
 =========================================================================
 
@@ -108,69 +108,71 @@ Cores Search Directories           : {"ipcore_dir" "Code/MEMBANK"  }
 =========================================================================
 *                          HDL Parsing                                  *
 =========================================================================
-Analyzing Verilog file "D:\iseproj\Org\Project\M_datapath_IO.v" into library work
+Analyzing Verilog file "D:\ISE PROJECT\Org13-Project-master\M_datapath_IO.v" into library work
 Parsing module <M_datapath>.
-Analyzing Verilog file "D:\iseproj\Org\Project\mulit_ctrl_IO.v" into library work
+Analyzing Verilog file "D:\ISE PROJECT\Org13-Project-master\mulit_ctrl_IO.v" into library work
 Parsing module <ctrl>.
-Analyzing Verilog file "D:\iseproj\Org\Project\ipcore_dir\RAM_B.v" into library work
+Analyzing Verilog file "D:\ISE PROJECT\Org13-Project-master\ipcore_dir\RAM_B.v" into library work
 Parsing module <RAM_B>.
-Analyzing Verilog file "D:\iseproj\Org\Project\Code\MEMBANK\UARTER.v" into library work
+Analyzing Verilog file "D:\ISE PROJECT\Org13-Project-master\Code\MEMBANK\UARTER.v" into library work
 Parsing module <UARTER>.
-Analyzing Verilog file "D:\iseproj\Org\Project\Code\MEMBANK\BYTE2WORD.v" into library work
+Analyzing Verilog file "D:\ISE PROJECT\Org13-Project-master\Code\MEMBANK\BYTE2WORD.v" into library work
 Parsing module <BYTE2WORD>.
-Analyzing Verilog file "D:\iseproj\Org\Project\VGA.v" into library work
+Analyzing Verilog file "D:\ISE PROJECT\Org13-Project-master\VGA.v" into library work
 Parsing module <VGA>.
-Analyzing Verilog file "D:\iseproj\Org\Project\SSeg7_Dev_IO.v" into library work
+Analyzing Verilog file "D:\ISE PROJECT\Org13-Project-master\SSeg7_Dev_IO.v" into library work
 Parsing module <SSeg7_Dev>.
-Analyzing Verilog file "D:\iseproj\Org\Project\SPIO_IO.v" into library work
+Analyzing Verilog file "D:\ISE PROJECT\Org13-Project-master\SPIO_IO.v" into library work
 Parsing module <SPIO>.
-Analyzing Verilog file "D:\iseproj\Org\Project\SEnter_2_32_IO.v" into library work
+Analyzing Verilog file "D:\ISE PROJECT\Org13-Project-master\SEnter_2_32_IO.v" into library work
 Parsing module <SEnter_2_32>.
-Analyzing Verilog file "D:\iseproj\Org\Project\Seg7_Dev_IO.v" into library work
+Analyzing Verilog file "D:\ISE PROJECT\Org13-Project-master\Seg7_Dev_IO.v" into library work
 Parsing module <Seg7_Dev>.
-Analyzing Verilog file "D:\iseproj\Org\Project\SAnti_jitter_IO.v" into library work
+Analyzing Verilog file "D:\ISE PROJECT\Org13-Project-master\SAnti_jitter_IO.v" into library work
 Parsing module <SAnti_jitter>.
-Analyzing Verilog file "D:\iseproj\Org\Project\ps2_kb.v" into library work
+Analyzing Verilog file "D:\ISE PROJECT\Org13-Project-master\ps2_kb.v" into library work
 Parsing module <ps2_ver2>.
-Analyzing Verilog file "D:\iseproj\Org\Project\PIO_IO.v" into library work
+Analyzing Verilog file "D:\ISE PROJECT\Org13-Project-master\PIO_IO.v" into library work
 Parsing module <PIO>.
-Analyzing Verilog file "D:\iseproj\Org\Project\Multi_CPU.vf" into library work
+Analyzing Verilog file "D:\ISE PROJECT\Org13-Project-master\Multi_CPU.vf" into library work
 Parsing module <Multi_CPU>.
-Analyzing Verilog file "D:\iseproj\Org\Project\Multi_8CH32_IO.v" into library work
+Analyzing Verilog file "D:\ISE PROJECT\Org13-Project-master\Multi_8CH32_IO.v" into library work
 Parsing module <Multi_8CH32>.
-Analyzing Verilog file "D:\iseproj\Org\Project\MIO_BUS_IO.v" into library work
+Analyzing Verilog file "D:\ISE PROJECT\Org13-Project-master\MIO_BUS_IO.v" into library work
 Parsing module <MIO_BUS>.
-Analyzing Verilog file "D:\iseproj\Org\Project\ipcore_dir\wall.v" into library work
+Analyzing Verilog file "D:\ISE PROJECT\Org13-Project-master\ipcore_dir\wall.v" into library work
 Parsing module <wall>.
-Analyzing Verilog file "D:\iseproj\Org\Project\ipcore_dir\VRAM.v" into library work
+Analyzing Verilog file "D:\ISE PROJECT\Org13-Project-master\ipcore_dir\VRAM.v" into library work
 Parsing module <VRAM>.
-Analyzing Verilog file "D:\iseproj\Org\Project\ipcore_dir\character.v" into library work
+Analyzing Verilog file "D:\ISE PROJECT\Org13-Project-master\ipcore_dir\character.v" into library work
 Parsing module <character>.
-Analyzing Verilog file "D:\iseproj\Org\Project\ipcore_dir\background.v" into library work
+Analyzing Verilog file "D:\ISE PROJECT\Org13-Project-master\ipcore_dir\CAI.v" into library work
+Parsing module <CAI>.
+Analyzing Verilog file "D:\ISE PROJECT\Org13-Project-master\ipcore_dir\background.v" into library work
 Parsing module <background>.
-Analyzing Verilog file "D:\iseproj\Org\Project\GPU.v" into library work
+Analyzing Verilog file "D:\ISE PROJECT\Org13-Project-master\GPU.v" into library work
 Parsing module <GPU>.
-Analyzing Verilog file "D:\iseproj\Org\Project\Counter_3_IO.v" into library work
+Analyzing Verilog file "D:\ISE PROJECT\Org13-Project-master\Counter_3_IO.v" into library work
 Parsing module <Counter>.
-Analyzing Verilog file "D:\iseproj\Org\Project\Code\MEMBANK\MEMBANK.v" into library work
+Analyzing Verilog file "D:\ISE PROJECT\Org13-Project-master\Code\MEMBANK\MEMBANK.v" into library work
 Parsing module <MEMBANK>.
-Analyzing Verilog file "D:\iseproj\Org\Project\clk_div.v" into library work
+Analyzing Verilog file "D:\ISE PROJECT\Org13-Project-master\clk_div.v" into library work
 Parsing module <clk_div>.
-Analyzing Verilog file "D:\iseproj\Org\Project\top.v" into library work
+Analyzing Verilog file "D:\ISE PROJECT\Org13-Project-master\top.v" into library work
 Parsing module <top>.
 
 =========================================================================
 *                            HDL Elaboration                            *
 =========================================================================
-WARNING:HDLCompiler:1016 - "D:\iseproj\Org\Project\top.v" Line 84: Port CPU_MIO is not connected to this instance
-WARNING:HDLCompiler:327 - "D:\iseproj\Org\Project\top.v" Line 90: Concatenation with unsized literal; will interpret as 32 bits
-WARNING:HDLCompiler:1016 - "D:\iseproj\Org\Project\top.v" Line 110: Port counter_set is not connected to this instance
+WARNING:HDLCompiler:1016 - "D:\ISE PROJECT\Org13-Project-master\top.v" Line 85: Port CPU_MIO is not connected to this instance
+WARNING:HDLCompiler:327 - "D:\ISE PROJECT\Org13-Project-master\top.v" Line 91: Concatenation with unsized literal; will interpret as 32 bits
+WARNING:HDLCompiler:1016 - "D:\ISE PROJECT\Org13-Project-master\top.v" Line 111: Port counter_set is not connected to this instance
 
 Elaborating module <top>.
 
 Elaborating module <SAnti_jitter>.
-WARNING:HDLCompiler:1499 - "D:\iseproj\Org\Project\SAnti_jitter_IO.v" Line 21: Empty module <SAnti_jitter> remains a black box.
-WARNING:HDLCompiler:1127 - "D:\iseproj\Org\Project\top.v" Line 68: Assignment to Pulse ignored, since the identifier is never used
+WARNING:HDLCompiler:1499 - "D:\ISE PROJECT\Org13-Project-master\SAnti_jitter_IO.v" Line 21: Empty module <SAnti_jitter> remains a black box.
+WARNING:HDLCompiler:1127 - "D:\ISE PROJECT\Org13-Project-master\top.v" Line 69: Assignment to Pulse ignored, since the identifier is never used
 
 Elaborating module <clk_div>.
 
@@ -179,110 +181,113 @@ Elaborating module <VCC>.
 Elaborating module <GND>.
 
 Elaborating module <SEnter_2_32>.
-WARNING:HDLCompiler:1499 - "D:\iseproj\Org\Project\SEnter_2_32_IO.v" Line 21: Empty module <SEnter_2_32> remains a black box.
-WARNING:HDLCompiler:1127 - "D:\iseproj\Org\Project\top.v" Line 79: Assignment to Ai ignored, since the identifier is never used
+WARNING:HDLCompiler:1499 - "D:\ISE PROJECT\Org13-Project-master\SEnter_2_32_IO.v" Line 21: Empty module <SEnter_2_32> remains a black box.
+WARNING:HDLCompiler:1127 - "D:\ISE PROJECT\Org13-Project-master\top.v" Line 80: Assignment to Ai ignored, since the identifier is never used
 
 Elaborating module <SSeg7_Dev>.
-WARNING:HDLCompiler:1499 - "D:\iseproj\Org\Project\SSeg7_Dev_IO.v" Line 21: Empty module <SSeg7_Dev> remains a black box.
+WARNING:HDLCompiler:1499 - "D:\ISE PROJECT\Org13-Project-master\SSeg7_Dev_IO.v" Line 21: Empty module <SSeg7_Dev> remains a black box.
 
 Elaborating module <Multi_CPU>.
 
 Elaborating module <M_datapath>.
-WARNING:HDLCompiler:1499 - "D:\iseproj\Org\Project\M_datapath_IO.v" Line 21: Empty module <M_datapath> remains a black box.
+WARNING:HDLCompiler:1499 - "D:\ISE PROJECT\Org13-Project-master\M_datapath_IO.v" Line 21: Empty module <M_datapath> remains a black box.
 
 Elaborating module <ctrl>.
-WARNING:HDLCompiler:1499 - "D:\iseproj\Org\Project\mulit_ctrl_IO.v" Line 21: Empty module <ctrl> remains a black box.
+WARNING:HDLCompiler:1499 - "D:\ISE PROJECT\Org13-Project-master\mulit_ctrl_IO.v" Line 21: Empty module <ctrl> remains a black box.
 
 Elaborating module <INV>.
 
 Elaborating module <AND2>.
-WARNING:HDLCompiler:1127 - "D:\iseproj\Org\Project\top.v" Line 85: Assignment to State ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "D:\ISE PROJECT\Org13-Project-master\top.v" Line 86: Assignment to State ignored, since the identifier is never used
 
 Elaborating module <MEMBANK>.
 
 Elaborating module <UARTER>.
-WARNING:HDLCompiler:1499 - "D:\iseproj\Org\Project\Code\MEMBANK\UARTER.v" Line 21: Empty module <UARTER> remains a black box.
+WARNING:HDLCompiler:1499 - "D:\ISE PROJECT\Org13-Project-master\Code\MEMBANK\UARTER.v" Line 21: Empty module <UARTER> remains a black box.
 
 Elaborating module <BYTE2WORD>.
-WARNING:HDLCompiler:1499 - "D:\iseproj\Org\Project\Code\MEMBANK\BYTE2WORD.v" Line 21: Empty module <BYTE2WORD> remains a black box.
+WARNING:HDLCompiler:1499 - "D:\ISE PROJECT\Org13-Project-master\Code\MEMBANK\BYTE2WORD.v" Line 21: Empty module <BYTE2WORD> remains a black box.
 
 Elaborating module <RAM_B>.
-WARNING:HDLCompiler:1499 - "D:\iseproj\Org\Project\ipcore_dir\RAM_B.v" Line 39: Empty module <RAM_B> remains a black box.
-WARNING:HDLCompiler:189 - "D:\iseproj\Org\Project\Code\MEMBANK\MEMBANK.v" Line 95: Size mismatch in connection of port <addra>. Formal port size is 10-bit while actual signal size is 12-bit.
-WARNING:HDLCompiler:189 - "D:\iseproj\Org\Project\top.v" Line 90: Size mismatch in connection of port <Addr>. Formal port size is 12-bit while actual signal size is 74-bit.
+WARNING:HDLCompiler:1499 - "D:\ISE PROJECT\Org13-Project-master\ipcore_dir\RAM_B.v" Line 39: Empty module <RAM_B> remains a black box.
+WARNING:HDLCompiler:189 - "D:\ISE PROJECT\Org13-Project-master\Code\MEMBANK\MEMBANK.v" Line 95: Size mismatch in connection of port <addra>. Formal port size is 10-bit while actual signal size is 12-bit.
+WARNING:HDLCompiler:189 - "D:\ISE PROJECT\Org13-Project-master\top.v" Line 91: Size mismatch in connection of port <Addr>. Formal port size is 12-bit while actual signal size is 74-bit.
 
 Elaborating module <Counter>.
-WARNING:HDLCompiler:1127 - "D:\iseproj\Org\Project\Counter_3_IO.v" Line 43: Assignment to M2 ignored, since the identifier is never used
-WARNING:HDLCompiler:634 - "D:\iseproj\Org\Project\Counter_3_IO.v" Line 36: Net <counter1[32]> does not have a driver.
+WARNING:HDLCompiler:1127 - "D:\ISE PROJECT\Org13-Project-master\Counter_3_IO.v" Line 43: Assignment to M2 ignored, since the identifier is never used
+WARNING:HDLCompiler:634 - "D:\ISE PROJECT\Org13-Project-master\Counter_3_IO.v" Line 36: Net <counter1[32]> does not have a driver.
 
 Elaborating module <Multi_8CH32>.
-WARNING:HDLCompiler:1499 - "D:\iseproj\Org\Project\Multi_8CH32_IO.v" Line 21: Empty module <Multi_8CH32> remains a black box.
+WARNING:HDLCompiler:1499 - "D:\ISE PROJECT\Org13-Project-master\Multi_8CH32_IO.v" Line 21: Empty module <Multi_8CH32> remains a black box.
 
 Elaborating module <SPIO>.
-WARNING:HDLCompiler:1499 - "D:\iseproj\Org\Project\SPIO_IO.v" Line 21: Empty module <SPIO> remains a black box.
+WARNING:HDLCompiler:1499 - "D:\ISE PROJECT\Org13-Project-master\SPIO_IO.v" Line 21: Empty module <SPIO> remains a black box.
 
 Elaborating module <Seg7_Dev>.
-WARNING:HDLCompiler:1499 - "D:\iseproj\Org\Project\Seg7_Dev_IO.v" Line 21: Empty module <Seg7_Dev> remains a black box.
+WARNING:HDLCompiler:1499 - "D:\ISE PROJECT\Org13-Project-master\Seg7_Dev_IO.v" Line 21: Empty module <Seg7_Dev> remains a black box.
 
 Elaborating module <PIO>.
-WARNING:HDLCompiler:1499 - "D:\iseproj\Org\Project\PIO_IO.v" Line 21: Empty module <PIO> remains a black box.
+WARNING:HDLCompiler:1499 - "D:\ISE PROJECT\Org13-Project-master\PIO_IO.v" Line 21: Empty module <PIO> remains a black box.
 
 Elaborating module <MIO_BUS>.
-WARNING:HDLCompiler:1127 - "D:\iseproj\Org\Project\top.v" Line 113: Assignment to ram_data_in ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "D:\ISE PROJECT\Org13-Project-master\top.v" Line 114: Assignment to ram_data_in ignored, since the identifier is never used
 
 Elaborating module <background>.
-WARNING:HDLCompiler:1499 - "D:\iseproj\Org\Project\ipcore_dir\background.v" Line 39: Empty module <background> remains a black box.
+WARNING:HDLCompiler:1499 - "D:\ISE PROJECT\Org13-Project-master\ipcore_dir\background.v" Line 39: Empty module <background> remains a black box.
 
 Elaborating module <character>.
-WARNING:HDLCompiler:1499 - "D:\iseproj\Org\Project\ipcore_dir\character.v" Line 39: Empty module <character> remains a black box.
+WARNING:HDLCompiler:1499 - "D:\ISE PROJECT\Org13-Project-master\ipcore_dir\character.v" Line 39: Empty module <character> remains a black box.
 
 Elaborating module <wall>.
-WARNING:HDLCompiler:1499 - "D:\iseproj\Org\Project\ipcore_dir\wall.v" Line 39: Empty module <wall> remains a black box.
+WARNING:HDLCompiler:1499 - "D:\ISE PROJECT\Org13-Project-master\ipcore_dir\wall.v" Line 39: Empty module <wall> remains a black box.
+
+Elaborating module <CAI>.
+WARNING:HDLCompiler:1499 - "D:\ISE PROJECT\Org13-Project-master\ipcore_dir\CAI.v" Line 39: Empty module <CAI> remains a black box.
 
 Elaborating module <VRAM>.
-WARNING:HDLCompiler:1499 - "D:\iseproj\Org\Project\ipcore_dir\VRAM.v" Line 39: Empty module <VRAM> remains a black box.
+WARNING:HDLCompiler:1499 - "D:\ISE PROJECT\Org13-Project-master\ipcore_dir\VRAM.v" Line 39: Empty module <VRAM> remains a black box.
 
 Elaborating module <GPU>.
-WARNING:HDLCompiler:413 - "D:\iseproj\Org\Project\GPU.v" Line 32: Result of 20-bit expression is truncated to fit in 19-bit target.
+WARNING:HDLCompiler:413 - "D:\ISE PROJECT\Org13-Project-master\GPU.v" Line 32: Result of 20-bit expression is truncated to fit in 19-bit target.
 
 Elaborating module <VGA>.
 
 Elaborating module <ps2_ver2>.
-WARNING:HDLCompiler:634 - "D:\iseproj\Org\Project\top.v" Line 90: Net <MDi> does not have a driver.
-WARNING:HDLCompiler:552 - "D:\iseproj\Org\Project\top.v" Line 89: Input port enm is not connected on this instance
+WARNING:HDLCompiler:634 - "D:\ISE PROJECT\Org13-Project-master\top.v" Line 91: Net <MDi> does not have a driver.
+WARNING:HDLCompiler:552 - "D:\ISE PROJECT\Org13-Project-master\top.v" Line 90: Input port enm is not connected on this instance
 
 =========================================================================
 *                           HDL Synthesis                               *
 =========================================================================
 
 Synthesizing Unit <top>.
-    Related source file is "D:\iseproj\Org\Project\top.v".
-INFO:Xst:3210 - "D:\iseproj\Org\Project\top.v" line 67: Output port <pulse_out> of the instance <U9> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "D:\iseproj\Org\Project\top.v" line 78: Output port <Ai> of the instance <M4> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "D:\iseproj\Org\Project\top.v" line 78: Output port <Bi> of the instance <M4> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "D:\iseproj\Org\Project\top.v" line 78: Output port <blink> of the instance <M4> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "D:\iseproj\Org\Project\top.v" line 84: Output port <state> of the instance <U1> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "D:\iseproj\Org\Project\top.v" line 84: Output port <CPU_MIO> of the instance <U1> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "D:\iseproj\Org\Project\top.v" line 89: Output port <MAddr> of the instance <U31> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "D:\iseproj\Org\Project\top.v" line 89: Output port <MBDi> of the instance <U31> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "D:\iseproj\Org\Project\top.v" line 89: Output port <TESTD> of the instance <U31> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "D:\iseproj\Org\Project\top.v" line 89: Output port <TxEnd> of the instance <U31> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "D:\iseproj\Org\Project\top.v" line 89: Output port <mclk> of the instance <U31> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "D:\iseproj\Org\Project\top.v" line 89: Output port <MWR> of the instance <U31> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "D:\iseproj\Org\Project\top.v" line 89: Output port <MEN> of the instance <U31> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "D:\iseproj\Org\Project\top.v" line 102: Output port <GPIOf0> of the instance <U7> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "D:\iseproj\Org\Project\top.v" line 110: Output port <counter_set> of the instance <U71> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "D:\iseproj\Org\Project\top.v" line 110: Output port <GPIOf0> of the instance <U71> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "D:\iseproj\Org\Project\top.v" line 112: Output port <ram_data_in> of the instance <U4> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "D:\iseproj\Org\Project\top.v" line 135: Output port <rdn> of the instance <vga> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "D:\iseproj\Org\Project\top.v" line 138: Output port <ready> of the instance <ps2> is unconnected or connected to loadless signal.
+    Related source file is "D:\ISE PROJECT\Org13-Project-master\top.v".
+INFO:Xst:3210 - "D:\ISE PROJECT\Org13-Project-master\top.v" line 68: Output port <pulse_out> of the instance <U9> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\ISE PROJECT\Org13-Project-master\top.v" line 79: Output port <Ai> of the instance <M4> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\ISE PROJECT\Org13-Project-master\top.v" line 79: Output port <Bi> of the instance <M4> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\ISE PROJECT\Org13-Project-master\top.v" line 79: Output port <blink> of the instance <M4> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\ISE PROJECT\Org13-Project-master\top.v" line 85: Output port <state> of the instance <U1> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\ISE PROJECT\Org13-Project-master\top.v" line 85: Output port <CPU_MIO> of the instance <U1> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\ISE PROJECT\Org13-Project-master\top.v" line 90: Output port <MAddr> of the instance <U31> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\ISE PROJECT\Org13-Project-master\top.v" line 90: Output port <MBDi> of the instance <U31> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\ISE PROJECT\Org13-Project-master\top.v" line 90: Output port <TESTD> of the instance <U31> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\ISE PROJECT\Org13-Project-master\top.v" line 90: Output port <TxEnd> of the instance <U31> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\ISE PROJECT\Org13-Project-master\top.v" line 90: Output port <mclk> of the instance <U31> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\ISE PROJECT\Org13-Project-master\top.v" line 90: Output port <MWR> of the instance <U31> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\ISE PROJECT\Org13-Project-master\top.v" line 90: Output port <MEN> of the instance <U31> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\ISE PROJECT\Org13-Project-master\top.v" line 103: Output port <GPIOf0> of the instance <U7> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\ISE PROJECT\Org13-Project-master\top.v" line 111: Output port <counter_set> of the instance <U71> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\ISE PROJECT\Org13-Project-master\top.v" line 111: Output port <GPIOf0> of the instance <U71> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\ISE PROJECT\Org13-Project-master\top.v" line 113: Output port <ram_data_in> of the instance <U4> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\ISE PROJECT\Org13-Project-master\top.v" line 139: Output port <rdn> of the instance <vga> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\ISE PROJECT\Org13-Project-master\top.v" line 142: Output port <ready> of the instance <ps2> is unconnected or connected to loadless signal.
 WARNING:Xst:653 - Signal <MDi> is used but never assigned. This sourceless signal will be automatically connected to value GND.
     Summary:
 	no macro.
 Unit <top> synthesized.
 
 Synthesizing Unit <clk_div>.
-    Related source file is "D:\iseproj\Org\Project\clk_div.v".
+    Related source file is "D:\ISE PROJECT\Org13-Project-master\clk_div.v".
     Found 32-bit register for signal <clkdiv>.
     Found 32-bit adder for signal <clkdiv[31]_GND_3_o_add_0_OUT> created at line 32.
     Summary:
@@ -292,14 +297,14 @@ Synthesizing Unit <clk_div>.
 Unit <clk_div> synthesized.
 
 Synthesizing Unit <Multi_CPU>.
-    Related source file is "D:\iseproj\Org\Project\Multi_CPU.vf".
+    Related source file is "D:\ISE PROJECT\Org13-Project-master\Multi_CPU.vf".
 WARNING:Xst:647 - Input <INT> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
     Summary:
 	no macro.
 Unit <Multi_CPU> synthesized.
 
 Synthesizing Unit <MEMBANK>.
-    Related source file is "D:\iseproj\Org\Project\Code\MEMBANK\MEMBANK.v".
+    Related source file is "D:\ISE PROJECT\Org13-Project-master\Code\MEMBANK\MEMBANK.v".
         COUNTER_MSB = 9
         WIDTH = 8
         DEPTH_BITS = 7
@@ -309,7 +314,7 @@ Synthesizing Unit <MEMBANK>.
 Unit <MEMBANK> synthesized.
 
 Synthesizing Unit <Counter>.
-    Related source file is "D:\iseproj\Org\Project\Counter_3_IO.v".
+    Related source file is "D:\ISE PROJECT\Org13-Project-master\Counter_3_IO.v".
 WARNING:Xst:647 - Input <clk1> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 WARNING:Xst:647 - Input <clk2> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 WARNING:Xst:653 - Signal <counter1<32>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
@@ -331,7 +336,7 @@ WARNING:Xst:653 - Signal <counter2<32>> is used but never assigned. This sourcel
 Unit <Counter> synthesized.
 
 Synthesizing Unit <MIO_BUS>.
-    Related source file is "D:\iseproj\Org\Project\MIO_BUS_IO.v".
+    Related source file is "D:\ISE PROJECT\Org13-Project-master\MIO_BUS_IO.v".
 WARNING:Xst:647 - Input <BTN> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 WARNING:Xst:647 - Input <addr_bus<27:19>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 WARNING:Xst:647 - Input <led_out<15:13>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
@@ -353,22 +358,24 @@ WARNING:Xst:647 - Input <rst> is never used. This port will be preserved and lef
     Found 10-bit register for signal <character_addr>.
     Found 1-bit register for signal <wall_rd>.
     Found 10-bit register for signal <wall_addr>.
+    Found 1-bit register for signal <cai_rd>.
+    Found 17-bit register for signal <cai_addr>.
     Found 1-bit register for signal <vram_we>.
     Found 12-bit register for signal <vram_data>.
     Found 19-bit register for signal <vram_addr>.
     Found 1-bit register for signal <data_ram_we>.
     Summary:
-	inferred 148 D-type flip-flop(s).
-	inferred   7 Multiplexer(s).
+	inferred 166 D-type flip-flop(s).
+	inferred   8 Multiplexer(s).
 Unit <MIO_BUS> synthesized.
 
 Synthesizing Unit <GPU>.
-    Related source file is "D:\iseproj\Org\Project\GPU.v".
+    Related source file is "D:\ISE PROJECT\Org13-Project-master\GPU.v".
     Found 12-bit register for signal <vga_data>.
     Found 19-bit register for signal <vram_addr>.
-    Found 19-bit adder for signal <GND_27_o_PWR_28_o_add_3_OUT> created at line 32.
+    Found 19-bit adder for signal <GND_28_o_PWR_29_o_add_3_OUT> created at line 32.
     Found 10x9-bit multiplier for signal <n0018> created at line 32.
-    Found 10-bit comparator greater for signal <col[9]_PWR_28_o_LessThan_2_o> created at line 31
+    Found 10-bit comparator greater for signal <col[9]_PWR_29_o_LessThan_2_o> created at line 31
     Summary:
 	inferred   1 Multiplier(s).
 	inferred   1 Adder/Subtractor(s).
@@ -377,7 +384,7 @@ Synthesizing Unit <GPU>.
 Unit <GPU> synthesized.
 
 Synthesizing Unit <VGA>.
-    Related source file is "D:\iseproj\Org\Project\VGA.v".
+    Related source file is "D:\ISE PROJECT\Org13-Project-master\VGA.v".
     Found 10-bit register for signal <v_count>.
     Found 9-bit register for signal <row>.
     Found 10-bit register for signal <col>.
@@ -389,15 +396,15 @@ Synthesizing Unit <VGA>.
     Found 4-bit register for signal <B>.
     Found 10-bit register for signal <h_count>.
     Found 10-bit subtractor for signal <col_addr> created at line 47.
-    Found 10-bit adder for signal <h_count[9]_GND_29_o_add_2_OUT> created at line 34.
-    Found 10-bit adder for signal <v_count[9]_GND_29_o_add_8_OUT> created at line 42.
+    Found 10-bit adder for signal <h_count[9]_GND_30_o_add_2_OUT> created at line 34.
+    Found 10-bit adder for signal <v_count[9]_GND_30_o_add_8_OUT> created at line 42.
     Found 9-bit subtractor for signal <row_addr<8:0>> created at line 46.
     Found 10-bit comparator greater for signal <h_sync> created at line 48
     Found 10-bit comparator greater for signal <v_sync> created at line 49
-    Found 10-bit comparator greater for signal <GND_29_o_h_count[9]_LessThan_17_o> created at line 50
-    Found 10-bit comparator greater for signal <h_count[9]_PWR_29_o_LessThan_18_o> created at line 51
-    Found 10-bit comparator greater for signal <GND_29_o_v_count[9]_LessThan_19_o> created at line 52
-    Found 10-bit comparator greater for signal <v_count[9]_PWR_29_o_LessThan_20_o> created at line 53
+    Found 10-bit comparator greater for signal <GND_30_o_h_count[9]_LessThan_17_o> created at line 50
+    Found 10-bit comparator greater for signal <h_count[9]_PWR_30_o_LessThan_18_o> created at line 51
+    Found 10-bit comparator greater for signal <GND_30_o_v_count[9]_LessThan_19_o> created at line 52
+    Found 10-bit comparator greater for signal <v_count[9]_PWR_30_o_LessThan_20_o> created at line 53
     Summary:
 	inferred   4 Adder/Subtractor(s).
 	inferred  54 D-type flip-flop(s).
@@ -406,7 +413,7 @@ Synthesizing Unit <VGA>.
 Unit <VGA> synthesized.
 
 Synthesizing Unit <ps2_ver2>.
-    Related source file is "D:\iseproj\Org\Project\ps2_kb.v".
+    Related source file is "D:\ISE PROJECT\Org13-Project-master\ps2_kb.v".
     Found 4-bit register for signal <cnt>.
     Found 8-bit register for signal <data_in>.
     Found 10-bit register for signal <data>.
@@ -418,7 +425,7 @@ Synthesizing Unit <ps2_ver2>.
     Found 1-bit register for signal <key_expand>.
     Found 1-bit register for signal <ps2_clk_sign0>.
     Found 1-bit register for signal <negedge_ps2_clk_shift>.
-    Found 4-bit adder for signal <cnt[3]_GND_30_o_add_1_OUT> created at line 56.
+    Found 4-bit adder for signal <cnt[3]_GND_31_o_add_1_OUT> created at line 56.
     Summary:
 	inferred   1 Adder/Subtractor(s).
 	inferred  30 D-type flip-flop(s).
@@ -439,10 +446,11 @@ Macro Statistics
  33-bit subtractor                                     : 1
  4-bit adder                                           : 1
  9-bit subtractor                                      : 1
-# Registers                                            : 51
- 1-bit register                                        : 27
+# Registers                                            : 53
+ 1-bit register                                        : 28
  10-bit register                                       : 8
  12-bit register                                       : 2
+ 17-bit register                                       : 1
  19-bit register                                       : 2
  24-bit register                                       : 1
  32-bit register                                       : 4
@@ -453,10 +461,10 @@ Macro Statistics
 # Comparators                                          : 8
  1-bit comparator not equal                            : 1
  10-bit comparator greater                             : 7
-# Multiplexers                                         : 16
+# Multiplexers                                         : 17
  1-bit 2-to-1 multiplexer                              : 1
  10-bit 2-to-1 multiplexer                             : 1
- 32-bit 2-to-1 multiplexer                             : 8
+ 32-bit 2-to-1 multiplexer                             : 9
  33-bit 2-to-1 multiplexer                             : 4
  33-bit 4-to-1 multiplexer                             : 1
  4-bit 2-to-1 multiplexer                              : 1
@@ -470,6 +478,7 @@ Macro Statistics
 Reading core <SAnti_jitter.ngc>.
 Reading core <SEnter_2_32.ngc>.
 Reading core <SSeg7_Dev.ngc>.
+Reading core <ipcore_dir/CAI.ngc>.
 Reading core <ipcore_dir/VRAM.ngc>.
 Reading core <Multi_8CH32.ngc>.
 Reading core <SPIO.ngc>.
@@ -486,6 +495,7 @@ Reading core <ctrl.ngc>.
 Loading core <SAnti_jitter> for timing and area information for instance <U9>.
 Loading core <SEnter_2_32> for timing and area information for instance <M4>.
 Loading core <SSeg7_Dev> for timing and area information for instance <U6>.
+Loading core <CAI> for timing and area information for instance <death>.
 Loading core <VRAM> for timing and area information for instance <frame>.
 Loading core <Multi_8CH32> for timing and area information for instance <U5>.
 Loading core <SPIO> for timing and area information for instance <U7>.
@@ -523,7 +533,7 @@ WARNING:Xst:2677 - Node <counter_Ctrl_22> of sequential type is unconnected in b
 WARNING:Xst:2677 - Node <counter_Ctrl_23> of sequential type is unconnected in block <U10>.
 
 Synthesizing (advanced) Unit <GPU>.
-	Multiplier <Mmult_n0018> in block <GPU> and adder/subtractor <Madd_GND_27_o_PWR_28_o_add_3_OUT> in block <GPU> are combined into a MAC<Maddsub_n0018>.
+	Multiplier <Mmult_n0018> in block <GPU> and adder/subtractor <Madd_GND_28_o_PWR_29_o_add_3_OUT> in block <GPU> are combined into a MAC<Maddsub_n0018>.
 	The following registers are also absorbed by the MAC: <vram_addr> in block <GPU>, <vga/col> in block <top>.
 Unit <GPU> synthesized (advanced).
 
@@ -576,14 +586,14 @@ Macro Statistics
  10-bit up counter                                     : 2
  32-bit up counter                                     : 1
  4-bit up counter                                      : 1
-# Registers                                            : 290
- Flip-Flops                                            : 290
+# Registers                                            : 308
+ Flip-Flops                                            : 308
 # Comparators                                          : 8
  1-bit comparator not equal                            : 1
  10-bit comparator greater                             : 7
-# Multiplexers                                         : 77
+# Multiplexers                                         : 78
  1-bit 2-to-1 multiplexer                              : 66
- 32-bit 2-to-1 multiplexer                             : 8
+ 32-bit 2-to-1 multiplexer                             : 9
  33-bit 2-to-1 multiplexer                             : 2
  33-bit 4-to-1 multiplexer                             : 1
 
@@ -675,8 +685,8 @@ Final Macro Processing ...
 Final Register Report
 
 Macro Statistics
-# Registers                                            : 323
- Flip-Flops                                            : 323
+# Registers                                            : 341
+ Flip-Flops                                            : 341
 
 =========================================================================
 
@@ -699,43 +709,43 @@ Top Level Output File Name         : top.ngc
 
 Primitive and Black Box Usage:
 ------------------------------
-# BELS                             : 11167
+# BELS                             : 11270
 #      AND2                        : 13
 #      AND3                        : 99
 #      AND4                        : 81
-#      GND                         : 8
-#      INV                         : 112
+#      GND                         : 9
+#      INV                         : 113
 #      LUT1                        : 146
-#      LUT2                        : 88
-#      LUT3                        : 1345
-#      LUT4                        : 428
-#      LUT5                        : 4623
-#      LUT6                        : 3256
+#      LUT2                        : 89
+#      LUT3                        : 1357
+#      LUT4                        : 438
+#      LUT5                        : 4654
+#      LUT6                        : 3341
 #      MUXCY                       : 274
-#      MUXF7                       : 222
-#      MUXF8                       : 71
+#      MUXF7                       : 200
+#      MUXF8                       : 55
 #      OR2                         : 64
 #      OR3                         : 27
 #      OR4                         : 36
 #      VCC                         : 10
 #      XOR2                        : 1
 #      XORCY                       : 263
-# FlipFlops/Latches                : 6275
+# FlipFlops/Latches                : 6298
 #      FD                          : 280
 #      FDC                         : 118
 #      FDCE                        : 1122
 #      FDCE_1                      : 22
-#      FDE                         : 4350
+#      FDE                         : 4355
 #      FDE_1                       : 36
 #      FDP                         : 7
 #      FDPE                        : 2
 #      FDPE_1                      : 6
-#      FDR                         : 158
+#      FDR                         : 176
 #      FDRE                        : 150
 #      FDSE                        : 24
-# RAMS                             : 106
-#      RAMB18E1                    : 2
-#      RAMB36E1                    : 104
+# RAMS                             : 149
+#      RAMB18E1                    : 5
+#      RAMB36E1                    : 144
 # Clock Buffers                    : 6
 #      BUFG                        : 6
 # IO Buffers                       : 77
@@ -751,24 +761,24 @@ Selected Device : 7k160tffg676-2l
 
 
 Slice Logic Utilization: 
- Number of Slice Registers:            6275  out of  202800     3%  
- Number of Slice LUTs:                 9998  out of  101400     9%  
-    Number used as Logic:              9998  out of  101400     9%  
+ Number of Slice Registers:            6298  out of  202800     3%  
+ Number of Slice LUTs:                10138  out of  101400     9%  
+    Number used as Logic:             10138  out of  101400     9%  
 
 Slice Logic Distribution: 
- Number of LUT Flip Flop pairs used:  11510
-   Number with an unused Flip Flop:    5235  out of  11510    45%  
-   Number with an unused LUT:          1512  out of  11510    13%  
-   Number of fully used LUT-FF pairs:  4763  out of  11510    41%  
-   Number of unique control sets:       203
+ Number of LUT Flip Flop pairs used:  11673
+   Number with an unused Flip Flop:    5375  out of  11673    46%  
+   Number with an unused LUT:          1535  out of  11673    13%  
+   Number of fully used LUT-FF pairs:  4763  out of  11673    40%  
+   Number of unique control sets:       205
 
 IO Utilization: 
  Number of IOs:                          77
  Number of bonded IOBs:                  77  out of    400    19%  
 
 Specific Feature Utilization:
- Number of Block RAM/FIFO:              105  out of    325    32%  
-    Number using Block RAM only:        105
+ Number of Block RAM/FIFO:              147  out of    325    45%  
+    Number using Block RAM only:        147
  Number of BUFG/BUFGCTRLs:                6  out of     32    18%  
  Number of DSP48E1s:                      1  out of    600     0%  
 
@@ -794,7 +804,7 @@ Clock Information:
 Clock Signal                         | Clock buffer(FF name)                                                                                                                            | Load  |
 -------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------+-------+
 U8/clkdiv_1                          | BUFG                                                                                                                                             | 188   |
-clk_100mhz                           | IBUF+BUFG                                                                                                                                        | 4879  |
+clk_100mhz                           | IBUF+BUFG                                                                                                                                        | 4945  |
 U8/clkdiv_6                          | BUFG                                                                                                                                             | 35    |
 IO_clk(IO_clk1:O)                    | BUFG(*)(U10/counter_Ctrl_2)                                                                                                                      | 173   |
 U9/clk1                              | BUFG                                                                                                                                             | 41    |
@@ -812,7 +822,8 @@ Asynchronous Control Signals Information:
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------+-------+
 Control Signal                                                                                                                                                                                                                                                                | Buffer(FF name)                                                                                                                                  | Load  |
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------+-------+
-frame/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/has_mux_b.B/Mmux_dout_mux_1212(frame/XST_GND:G)                                                                                                                                                       | NONE(frame/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[66].ram.r/v6_init.ram/NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram)    | 364   |
+frame/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/has_mux_b.B/Mmux_dout_mux_1212(frame/XST_GND:G)                                                                                                                                                       | NONE(frame/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[1].ram.r/v6_init.ram/NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_B) | 364   |
+death/N1(death/XST_GND:G)                                                                                                                                                                                                                                                     | NONE(death/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/v6_init.ram/NO_BMM_INFO.SP.CASCADED_PRIM36.ram_B)  | 72    |
 U31/MEM/N0(U31/MEM/XST_GND:G)                                                                                                                                                                                                                                                 | NONE(U31/MEM/U102/Mram_data)                                                                                                                     | 4     |
 U31/MEM/N1(U31/MEM/XST_VCC:P)                                                                                                                                                                                                                                                 | NONE(U31/MEM/U102/Mram_data)                                                                                                                     | 4     |
 U31/MEM/U102/BUS_0002(U31/MEM/U102/Mmux_BUS_000211:O)                                                                                                                                                                                                                         | NONE(U31/MEM/U102/Mram_data)                                                                                                                     | 2     |
@@ -841,6 +852,14 @@ frame/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[
 frame/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[8].ram.r/v6_init.ram/cascadelatb_tmp(frame/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[8].ram.r/v6_init.ram/NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_B:CASCADEOUTB)  | NONE(frame/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[8].ram.r/v6_init.ram/NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_T) | 2     |
 frame/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[9].ram.r/v6_init.ram/cascadelata_tmp(frame/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[9].ram.r/v6_init.ram/NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_B:CASCADEOUTA)  | NONE(frame/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[9].ram.r/v6_init.ram/NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_T) | 2     |
 frame/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[9].ram.r/v6_init.ram/cascadelatb_tmp(frame/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[9].ram.r/v6_init.ram/NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_B:CASCADEOUTB)  | NONE(frame/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[9].ram.r/v6_init.ram/NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_T) | 2     |
+death/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/v6_init.ram/cascadelata_tmp(death/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/v6_init.ram/NO_BMM_INFO.SP.CASCADED_PRIM36.ram_B:CASCADEOUTA)   | NONE(death/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/v6_init.ram/NO_BMM_INFO.SP.CASCADED_PRIM36.ram_T)  | 1     |
+death/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/v6_init.ram/cascadelatb_tmp(death/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/v6_init.ram/NO_BMM_INFO.SP.CASCADED_PRIM36.ram_B:CASCADEOUTB)   | NONE(death/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/v6_init.ram/NO_BMM_INFO.SP.CASCADED_PRIM36.ram_T)  | 1     |
+death/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[37].ram.r/v6_init.ram/cascadelata_tmp(death/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[37].ram.r/v6_init.ram/NO_BMM_INFO.SP.CASCADED_PRIM36.ram_B:CASCADEOUTA) | NONE(death/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[37].ram.r/v6_init.ram/NO_BMM_INFO.SP.CASCADED_PRIM36.ram_T) | 1     |
+death/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[37].ram.r/v6_init.ram/cascadelatb_tmp(death/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[37].ram.r/v6_init.ram/NO_BMM_INFO.SP.CASCADED_PRIM36.ram_B:CASCADEOUTB) | NONE(death/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[37].ram.r/v6_init.ram/NO_BMM_INFO.SP.CASCADED_PRIM36.ram_T) | 1     |
+death/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[38].ram.r/v6_init.ram/cascadelata_tmp(death/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[38].ram.r/v6_init.ram/NO_BMM_INFO.SP.CASCADED_PRIM36.ram_B:CASCADEOUTA) | NONE(death/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[38].ram.r/v6_init.ram/NO_BMM_INFO.SP.CASCADED_PRIM36.ram_T) | 1     |
+death/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[38].ram.r/v6_init.ram/cascadelatb_tmp(death/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[38].ram.r/v6_init.ram/NO_BMM_INFO.SP.CASCADED_PRIM36.ram_B:CASCADEOUTB) | NONE(death/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[38].ram.r/v6_init.ram/NO_BMM_INFO.SP.CASCADED_PRIM36.ram_T) | 1     |
+death/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[4].ram.r/v6_init.ram/cascadelata_tmp(death/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[4].ram.r/v6_init.ram/NO_BMM_INFO.SP.CASCADED_PRIM36.ram_B:CASCADEOUTA)   | NONE(death/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[4].ram.r/v6_init.ram/NO_BMM_INFO.SP.CASCADED_PRIM36.ram_T)  | 1     |
+death/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[4].ram.r/v6_init.ram/cascadelatb_tmp(death/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[4].ram.r/v6_init.ram/NO_BMM_INFO.SP.CASCADED_PRIM36.ram_B:CASCADEOUTB)   | NONE(death/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[4].ram.r/v6_init.ram/NO_BMM_INFO.SP.CASCADED_PRIM36.ram_T)  | 1     |
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------+-------+
 
 Timing Summary:
@@ -849,7 +868,7 @@ Speed Grade: -2
 
    Minimum period: 8.251ns (Maximum Frequency: 121.196MHz)
    Minimum input arrival time before clock: 2.109ns
-   Maximum output required time after clock: 7.703ns
+   Maximum output required time after clock: 7.732ns
    Maximum combinational path delay: No path found
 
 Timing Details:
@@ -899,27 +918,24 @@ Delay:               3.983ns (Levels of Logic = 20)
 
 =========================================================================
 Timing constraint: Default period analysis for Clock 'clk_100mhz'
-  Clock period: 7.074ns (frequency: 141.357MHz)
-  Total number of paths / destination ports: 208665 / 10057
+  Clock period: 7.266ns (frequency: 137.632MHz)
+  Total number of paths / destination ports: 218833 / 10106
 -------------------------------------------------------------------------
-Delay:               7.074ns (Levels of Logic = 16)
-  Source:            U4/character_addr_1 (FF)
+Delay:               7.266ns (Levels of Logic = 13)
+  Source:            death/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[2].ram.r/v6_init.ram/NO_BMM_INFO.SP.SIMPLE_PRIM18.ram (RAM)
   Destination:       U6/M2/buffer_60 (FF)
   Source Clock:      clk_100mhz rising
   Destination Clock: clk_100mhz rising
 
-  Data Path: U4/character_addr_1 to U6/M2/buffer_60
+  Data Path: death/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[2].ram.r/v6_init.ram/NO_BMM_INFO.SP.SIMPLE_PRIM18.ram to U6/M2/buffer_60
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDR:C->Q            148   0.236   0.764  U4/character_addr_1 (U4/character_addr_1)
-     begin scope: 'player:a<1>'
-     LUT6:I0->O            1   0.043   0.522  U0/xst_options.dist_mem_inst/gen_rom.rom_inst/Mram_spo_int53 (U0/xst_options.dist_mem_inst/gen_rom.rom_inst/Mram_spo_int5)
-     LUT6:I2->O            1   0.043   0.522  U0/xst_options.dist_mem_inst/gen_rom.rom_inst/Mram_spo_int141_7 (U0/xst_options.dist_mem_inst/gen_rom.rom_inst/Mram_spo_int141_7)
-     LUT6:I2->O            1   0.043   0.350  a<9>8 (spo<0>)
-     end scope: 'player:spo<0>'
-     LUT6:I5->O            1   0.043   0.350  U4/Mmux_Cpu_data4bus23 (U4/Mmux_Cpu_data4bus22)
-     LUT6:I5->O            3   0.043   0.534  U4/Mmux_Cpu_data4bus24 (Data_in<0>)
+     RAMB18E1:CLKARDCLK->DOADO0    1   1.800   0.522  U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[2].ram.r/v6_init.ram/NO_BMM_INFO.SP.SIMPLE_PRIM18.ram (U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[2].ram.ram_douta)
+     LUT6:I2->O            1   0.043   0.350  U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/has_mux_a.A/Mmux_dout_mux11 (U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/has_mux_a.A/Mmux_dout_mux1)
+     LUT3:I2->O            1   0.043   0.350  U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/has_mux_a.A/Mmux_dout_mux12 (douta<0>)
+     end scope: 'death:douta<0>'
+     LUT6:I5->O            3   0.043   0.534  U4/Mmux_Cpu_data4bus34 (Data_in<0>)
      begin scope: 'U5:data6<0>'
      LUT6:I2->O            1   0.043   0.000  MUX1_DispData/Mmux_o_3 (MUX1_DispData/Mmux_o_3)
      MUXF7:I1->O          16   0.178   0.422  MUX1_DispData/Mmux_o_2_f7 (Disp_num<0>)
@@ -933,8 +949,8 @@ Delay:               7.074ns (Levels of Logic = 16)
      LUT3:I1->O            1   0.043   0.000  M2/buffer_60_rstpot (M2/buffer_60_rstpot)
      FD:D                     -0.000          M2/buffer_60
     ----------------------------------------
-    Total                      7.074ns (0.941ns logic, 6.133ns route)
-                                       (13.3% logic, 86.7% route)
+    Total                      7.266ns (2.419ns logic, 4.847ns route)
+                                       (33.3% logic, 66.7% route)
 
 =========================================================================
 Timing constraint: Default period analysis for Clock 'U8/clkdiv_6'
@@ -1214,7 +1230,7 @@ Offset:              5.393ns (Levels of Logic = 14)
     ----------------------------------------  ------------
      FDCE_1:C->Q           2   0.240   0.355  LED_8 (LED_out<8>)
      end scope: 'U7:LED_out<8>'
-     LUT6:I5->O            3   0.043   0.534  U4/Mmux_Cpu_data4bus211 (Data_in<24>)
+     LUT6:I5->O            3   0.043   0.534  U4/Mmux_Cpu_data4bus231 (Data_in<24>)
      begin scope: 'U5:data6<24>'
      LUT6:I2->O            1   0.043   0.000  MUX1_DispData/Mmux_o_316 (MUX1_DispData/Mmux_o_316)
      MUXF7:I1->O          16   0.178   0.605  MUX1_DispData/Mmux_o_2_f7_15 (Disp_num<24>)
@@ -1246,9 +1262,9 @@ Offset:              6.109ns (Levels of Logic = 14)
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDC:C->Q              4   0.236   0.539  U10/counter0_8 (U10/counter0_8)
-     LUT5:I1->O            1   0.043   0.495  U4/Mmux_Cpu_data4bus421 (U4/Mmux_Cpu_data4bus42)
-     LUT6:I3->O            3   0.043   0.534  U4/Mmux_Cpu_data4bus424 (Data_in<8>)
+     FDC:C->Q              4   0.236   0.512  U10/counter0_8 (U10/counter0_8)
+     LUT6:I3->O            1   0.043   0.522  U4/Mmux_Cpu_data4bus511 (U4/Mmux_Cpu_data4bus51)
+     LUT6:I2->O            3   0.043   0.534  U4/Mmux_Cpu_data4bus514 (Data_in<8>)
      begin scope: 'U5:data6<8>'
      LUT6:I2->O            1   0.043   0.000  MUX1_DispData/Mmux_o_330 (MUX1_DispData/Mmux_o_330)
      MUXF7:I1->O          16   0.178   0.605  MUX1_DispData/Mmux_o_2_f7_29 (Disp_num<8>)
@@ -1305,42 +1321,39 @@ Offset:              6.560ns (Levels of Logic = 16)
 
 =========================================================================
 Timing constraint: Default OFFSET OUT AFTER for Clock 'clk_100mhz'
-  Total number of paths / destination ports: 80844 / 18
+  Total number of paths / destination ports: 90523 / 18
 -------------------------------------------------------------------------
-Offset:              7.703ns (Levels of Logic = 18)
-  Source:            U4/character_addr_5 (FF)
+Offset:              7.732ns (Levels of Logic = 16)
+  Source:            death/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[2].ram.r/v6_init.ram/NO_BMM_INFO.SP.SIMPLE_PRIM18.ram (RAM)
   Destination:       SEGMENT<6> (PAD)
   Source Clock:      clk_100mhz rising
 
-  Data Path: U4/character_addr_5 to SEGMENT<6>
+  Data Path: death/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[2].ram.r/v6_init.ram/NO_BMM_INFO.SP.SIMPLE_PRIM18.ram to SEGMENT<6>
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDR:C->Q            148   0.236   0.764  U4/character_addr_5 (U4/character_addr_5)
-     begin scope: 'player:a<5>'
-     LUT6:I0->O            1   0.043   0.522  U0/xst_options.dist_mem_inst/gen_rom.rom_inst/Mram_spo_int951 (U0/xst_options.dist_mem_inst/gen_rom.rom_inst/Mram_spo_int95)
-     LUT6:I2->O            1   0.043   0.522  U0/xst_options.dist_mem_inst/gen_rom.rom_inst/Mram_spo_int1031_7 (U0/xst_options.dist_mem_inst/gen_rom.rom_inst/Mram_spo_int1031_7)
-     LUT6:I2->O            1   0.043   0.350  a<9>51 (spo<9>)
-     end scope: 'player:spo<9>'
-     LUT6:I5->O            1   0.043   0.350  U4/Mmux_Cpu_data4bus443 (U4/Mmux_Cpu_data4bus442)
-     LUT6:I5->O            3   0.043   0.534  U4/Mmux_Cpu_data4bus444 (Data_in<9>)
-     begin scope: 'U5:data6<9>'
-     LUT6:I2->O            1   0.043   0.000  MUX1_DispData/Mmux_o_331 (MUX1_DispData/Mmux_o_331)
-     MUXF7:I1->O          15   0.178   0.600  MUX1_DispData/Mmux_o_2_f7_30 (Disp_num<9>)
-     end scope: 'U5:Disp_num<9>'
-     begin scope: 'U61:Hexs<9>'
-     LUT6:I2->O            1   0.043   0.000  M2/Mmux_Hexo_41 (M2/Mmux_Hexo_41)
-     MUXF7:I0->O          11   0.176   0.395  M2/Mmux_Hexo_2_f7_0 (Hex<1>)
-     INV:I->O              8   0.054   0.642  M1/XLXI_3 (M1/XLXN_62)
-     AND3:I1->O            1   0.043   0.613  M1/XLXI_35 (M1/XLXN_172)
-     OR3:I0->O             1   0.043   0.603  M1/XLXI_36 (M1/XLXN_212)
-     OR2:I1->O             1   0.043   0.350  M1/XLXI_51 (SEG_TXT<4>)
-     LUT3:I2->O            1   0.043   0.339  MUXHM/Mmux_o5 (SEGMENT<4>)
-     end scope: 'U61:SEGMENT<4>'
-     OBUF:I->O                 0.000          SEGMENT_4_OBUF (SEGMENT<4>)
+     RAMB18E1:CLKARDCLK->DOADO0    1   1.800   0.522  U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[2].ram.r/v6_init.ram/NO_BMM_INFO.SP.SIMPLE_PRIM18.ram (U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[2].ram.ram_douta)
+     LUT6:I2->O            1   0.043   0.350  U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/has_mux_a.A/Mmux_dout_mux11 (U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/has_mux_a.A/Mmux_dout_mux1)
+     LUT3:I2->O            1   0.043   0.350  U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/has_mux_a.A/Mmux_dout_mux12 (douta<0>)
+     end scope: 'death:douta<0>'
+     LUT6:I5->O            3   0.043   0.534  U4/Mmux_Cpu_data4bus34 (Data_in<0>)
+     begin scope: 'U5:data6<0>'
+     LUT6:I2->O            1   0.043   0.000  MUX1_DispData/Mmux_o_3 (MUX1_DispData/Mmux_o_3)
+     MUXF7:I1->O          16   0.178   0.433  MUX1_DispData/Mmux_o_2_f7 (Disp_num<0>)
+     end scope: 'U5:Disp_num<0>'
+     begin scope: 'U61:Hexs<0>'
+     LUT6:I5->O            1   0.043   0.000  M2/Mmux_Hexo_4 (M2/Mmux_Hexo_4)
+     MUXF7:I0->O          12   0.176   0.400  M2/Mmux_Hexo_2_f7 (Hex<0>)
+     INV:I->O              6   0.054   0.641  M1/XLXI_4 (M1/XLXN_24)
+     AND4:I0->O            1   0.043   0.613  M1/XLXI_28 (M1/XLXN_141)
+     OR4:I0->O             1   0.043   0.603  M1/XLXI_29 (M1/XLXN_211)
+     OR2:I1->O             1   0.043   0.350  M1/XLXI_50 (SEG_TXT<3>)
+     LUT3:I2->O            1   0.043   0.339  MUXHM/Mmux_o4 (SEGMENT<3>)
+     end scope: 'U61:SEGMENT<3>'
+     OBUF:I->O                 0.000          SEGMENT_3_OBUF (SEGMENT<3>)
     ----------------------------------------
-    Total                      7.703ns (1.117ns logic, 6.586ns route)
-                                       (14.5% logic, 85.5% route)
+    Total                      7.732ns (2.595ns logic, 5.137ns route)
+                                       (33.6% logic, 66.4% route)
 
 =========================================================================
 Timing constraint: Default OFFSET OUT AFTER for Clock 'U8/clkdiv_1'
@@ -1373,8 +1386,8 @@ Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
 Clk_CPU        |    8.251|         |         |         |
 IO_clk         |         |    0.638|         |         |
-U8/clkdiv_6    |    1.356|         |         |         |
-clk_100mhz     |    2.984|         |         |         |
+U8/clkdiv_6    |    1.437|         |         |         |
+clk_100mhz     |    3.151|         |         |         |
 ---------------+---------+---------+---------+---------+
 
 Clock to Setup on destination clock IO_clk
@@ -1383,7 +1396,7 @@ Clock to Setup on destination clock IO_clk
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
 IO_clk         |    1.876|    1.420|         |         |
-U8/clkdiv_6    |    1.237|         |         |         |
+U8/clkdiv_6    |    1.292|         |         |         |
 clk_100mhz     |    1.727|         |    1.551|         |
 ---------------+---------+---------+---------+---------+
 
@@ -1441,22 +1454,22 @@ Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 Clk_CPU        |    5.920|         |         |         |
 IO_clk         |    4.164|    4.765|         |         |
 M4/push        |    1.928|         |         |         |
-U8/clkdiv_6    |    5.471|         |         |         |
+U8/clkdiv_6    |    5.552|         |         |         |
 U9/clk1        |    1.100|         |         |         |
-clk_100mhz     |    7.074|         |         |         |
+clk_100mhz     |    7.266|         |         |         |
 ---------------+---------+---------+---------+---------+
 
 =========================================================================
 
 
-Total REAL time to Xst completion: 96.00 secs
-Total CPU time to Xst completion: 96.89 secs
+Total REAL time to Xst completion: 43.00 secs
+Total CPU time to Xst completion: 43.38 secs
  
 --> 
 
-Total memory usage is 4858068 kilobytes
+Total memory usage is 4763948 kilobytes
 
 Number of errors   :    0 (   0 filtered)
-Number of warnings :  125 (   0 filtered)
+Number of warnings :  126 (   0 filtered)
 Number of infos    :   43 (   0 filtered)
 

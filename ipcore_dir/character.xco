@@ -1,7 +1,7 @@
 ##############################################################
 #
 # Xilinx Core Generator version 14.7
-# Date: Thu Jun 20 15:09:25 2019
+# Date: Mon Jul 01 09:29:50 2019
 #
 ##############################################################
 #
@@ -40,7 +40,7 @@ SELECT Distributed_Memory_Generator xilinx.com:ip:dist_mem_gen:7.2
 # END Select
 # BEGIN Parameters
 CSET ce_overrides=ce_overrides_sync_controls
-CSET coefficient_file=.\character.coe
+CSET coefficient_file=.\new_character.coe
 CSET common_output_ce=false
 CSET common_output_clk=false
 CSET component_name=character
@@ -70,4 +70,4 @@ CSET sync_reset_qspo=false
 MISC pkg_timestamp=2012-11-21T20:07:40Z
 # END Extra information
 GENERATE
-# CRC: c3717fa5
+# CRC: 38dcbb2a
