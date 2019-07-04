@@ -3,14 +3,14 @@ Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 --> Parameter TMPDIR set to xst/projnav.tmp
 
 
-Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.12 secs
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.33 secs
  
 --> Parameter xsthdpdir set to xst
 
 
-Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.12 secs
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.34 secs
  
 --> Reading design: top.prj
 
@@ -108,71 +108,71 @@ Cores Search Directories           : {"Code/MEMBANK" "ipcore_dir"  }
 =========================================================================
 *                          HDL Parsing                                  *
 =========================================================================
-Analyzing Verilog file "D:\ISE PROJECT\Org13-Project-master\M_datapath_IO.v" into library work
+Analyzing Verilog file "D:\iseproj\Org\Org13-Project\M_datapath_IO.v" into library work
 Parsing module <M_datapath>.
-Analyzing Verilog file "D:\ISE PROJECT\Org13-Project-master\mulit_ctrl_IO.v" into library work
+Analyzing Verilog file "D:\iseproj\Org\Org13-Project\mulit_ctrl_IO.v" into library work
 Parsing module <ctrl>.
-Analyzing Verilog file "D:\ISE PROJECT\Org13-Project-master\ipcore_dir\RAM_B.v" into library work
+Analyzing Verilog file "D:\iseproj\Org\Org13-Project\ipcore_dir\RAM_B.v" into library work
 Parsing module <RAM_B>.
-Analyzing Verilog file "D:\ISE PROJECT\Org13-Project-master\Code\MEMBANK\UARTER.v" into library work
+Analyzing Verilog file "D:\iseproj\Org\Org13-Project\Code\MEMBANK\UARTER.v" into library work
 Parsing module <UARTER>.
-Analyzing Verilog file "D:\ISE PROJECT\Org13-Project-master\Code\MEMBANK\BYTE2WORD.v" into library work
+Analyzing Verilog file "D:\iseproj\Org\Org13-Project\Code\MEMBANK\BYTE2WORD.v" into library work
 Parsing module <BYTE2WORD>.
-Analyzing Verilog file "D:\ISE PROJECT\Org13-Project-master\VGA.v" into library work
+Analyzing Verilog file "D:\iseproj\Org\Org13-Project\VGA.v" into library work
 Parsing module <VGA>.
-Analyzing Verilog file "D:\ISE PROJECT\Org13-Project-master\SSeg7_Dev_IO.v" into library work
+Analyzing Verilog file "D:\iseproj\Org\Org13-Project\SSeg7_Dev_IO.v" into library work
 Parsing module <SSeg7_Dev>.
-Analyzing Verilog file "D:\ISE PROJECT\Org13-Project-master\SPIO_IO.v" into library work
+Analyzing Verilog file "D:\iseproj\Org\Org13-Project\SPIO_IO.v" into library work
 Parsing module <SPIO>.
-Analyzing Verilog file "D:\ISE PROJECT\Org13-Project-master\SEnter_2_32_IO.v" into library work
+Analyzing Verilog file "D:\iseproj\Org\Org13-Project\SEnter_2_32_IO.v" into library work
 Parsing module <SEnter_2_32>.
-Analyzing Verilog file "D:\ISE PROJECT\Org13-Project-master\Seg7_Dev_IO.v" into library work
+Analyzing Verilog file "D:\iseproj\Org\Org13-Project\Seg7_Dev_IO.v" into library work
 Parsing module <Seg7_Dev>.
-Analyzing Verilog file "D:\ISE PROJECT\Org13-Project-master\SAnti_jitter_IO.v" into library work
+Analyzing Verilog file "D:\iseproj\Org\Org13-Project\SAnti_jitter_IO.v" into library work
 Parsing module <SAnti_jitter>.
-Analyzing Verilog file "D:\ISE PROJECT\Org13-Project-master\ps2_kb.v" into library work
+Analyzing Verilog file "D:\iseproj\Org\Org13-Project\ps2_kb.v" into library work
 Parsing module <ps2_ver2>.
-Analyzing Verilog file "D:\ISE PROJECT\Org13-Project-master\PIO_IO.v" into library work
+Analyzing Verilog file "D:\iseproj\Org\Org13-Project\PIO_IO.v" into library work
 Parsing module <PIO>.
-Analyzing Verilog file "D:\ISE PROJECT\Org13-Project-master\Multi_CPU.vf" into library work
+Analyzing Verilog file "D:\iseproj\Org\Org13-Project\Multi_CPU.vf" into library work
 Parsing module <Multi_CPU>.
-Analyzing Verilog file "D:\ISE PROJECT\Org13-Project-master\Multi_8CH32_IO.v" into library work
+Analyzing Verilog file "D:\iseproj\Org\Org13-Project\Multi_8CH32_IO.v" into library work
 Parsing module <Multi_8CH32>.
-Analyzing Verilog file "D:\ISE PROJECT\Org13-Project-master\MIO_BUS_IO.v" into library work
+Analyzing Verilog file "D:\iseproj\Org\Org13-Project\MIO_BUS_IO.v" into library work
 Parsing module <MIO_BUS>.
-Analyzing Verilog file "D:\ISE PROJECT\Org13-Project-master\ipcore_dir\wall.v" into library work
+Analyzing Verilog file "D:\iseproj\Org\Org13-Project\ipcore_dir\wall.v" into library work
 Parsing module <wall>.
-Analyzing Verilog file "D:\ISE PROJECT\Org13-Project-master\ipcore_dir\VRAM.v" into library work
+Analyzing Verilog file "D:\iseproj\Org\Org13-Project\ipcore_dir\VRAM.v" into library work
 Parsing module <VRAM>.
-Analyzing Verilog file "D:\ISE PROJECT\Org13-Project-master\ipcore_dir\character.v" into library work
+Analyzing Verilog file "D:\iseproj\Org\Org13-Project\ipcore_dir\character.v" into library work
 Parsing module <character>.
-Analyzing Verilog file "D:\ISE PROJECT\Org13-Project-master\ipcore_dir\CAI.v" into library work
+Analyzing Verilog file "D:\iseproj\Org\Org13-Project\ipcore_dir\CAI.v" into library work
 Parsing module <CAI>.
-Analyzing Verilog file "D:\ISE PROJECT\Org13-Project-master\ipcore_dir\background.v" into library work
+Analyzing Verilog file "D:\iseproj\Org\Org13-Project\ipcore_dir\background.v" into library work
 Parsing module <background>.
-Analyzing Verilog file "D:\ISE PROJECT\Org13-Project-master\GPU.v" into library work
+Analyzing Verilog file "D:\iseproj\Org\Org13-Project\GPU.v" into library work
 Parsing module <GPU>.
-Analyzing Verilog file "D:\ISE PROJECT\Org13-Project-master\Counter_3_IO.v" into library work
+Analyzing Verilog file "D:\iseproj\Org\Org13-Project\Counter_3_IO.v" into library work
 Parsing module <Counter>.
-Analyzing Verilog file "D:\ISE PROJECT\Org13-Project-master\Code\MEMBANK\MEMBANK.v" into library work
+Analyzing Verilog file "D:\iseproj\Org\Org13-Project\Code\MEMBANK\MEMBANK.v" into library work
 Parsing module <MEMBANK>.
-Analyzing Verilog file "D:\ISE PROJECT\Org13-Project-master\clk_div.v" into library work
+Analyzing Verilog file "D:\iseproj\Org\Org13-Project\clk_div.v" into library work
 Parsing module <clk_div>.
-Analyzing Verilog file "D:\ISE PROJECT\Org13-Project-master\top.v" into library work
+Analyzing Verilog file "D:\iseproj\Org\Org13-Project\top.v" into library work
 Parsing module <top>.
 
 =========================================================================
 *                            HDL Elaboration                            *
 =========================================================================
-WARNING:HDLCompiler:1016 - "D:\ISE PROJECT\Org13-Project-master\top.v" Line 85: Port CPU_MIO is not connected to this instance
-WARNING:HDLCompiler:327 - "D:\ISE PROJECT\Org13-Project-master\top.v" Line 91: Concatenation with unsized literal; will interpret as 32 bits
-WARNING:HDLCompiler:1016 - "D:\ISE PROJECT\Org13-Project-master\top.v" Line 111: Port counter_set is not connected to this instance
+WARNING:HDLCompiler:1016 - "D:\iseproj\Org\Org13-Project\top.v" Line 85: Port CPU_MIO is not connected to this instance
+WARNING:HDLCompiler:327 - "D:\iseproj\Org\Org13-Project\top.v" Line 92: Concatenation with unsized literal; will interpret as 32 bits
+WARNING:HDLCompiler:1016 - "D:\iseproj\Org\Org13-Project\top.v" Line 112: Port counter_set is not connected to this instance
 
 Elaborating module <top>.
 
 Elaborating module <SAnti_jitter>.
-WARNING:HDLCompiler:1499 - "D:\ISE PROJECT\Org13-Project-master\SAnti_jitter_IO.v" Line 21: Empty module <SAnti_jitter> remains a black box.
-WARNING:HDLCompiler:1127 - "D:\ISE PROJECT\Org13-Project-master\top.v" Line 69: Assignment to Pulse ignored, since the identifier is never used
+WARNING:HDLCompiler:1499 - "D:\iseproj\Org\Org13-Project\SAnti_jitter_IO.v" Line 21: Empty module <SAnti_jitter> remains a black box.
+WARNING:HDLCompiler:1127 - "D:\iseproj\Org\Org13-Project\top.v" Line 69: Assignment to Pulse ignored, since the identifier is never used
 
 Elaborating module <clk_div>.
 
@@ -181,113 +181,113 @@ Elaborating module <VCC>.
 Elaborating module <GND>.
 
 Elaborating module <SEnter_2_32>.
-WARNING:HDLCompiler:1499 - "D:\ISE PROJECT\Org13-Project-master\SEnter_2_32_IO.v" Line 21: Empty module <SEnter_2_32> remains a black box.
-WARNING:HDLCompiler:1127 - "D:\ISE PROJECT\Org13-Project-master\top.v" Line 80: Assignment to Ai ignored, since the identifier is never used
+WARNING:HDLCompiler:1499 - "D:\iseproj\Org\Org13-Project\SEnter_2_32_IO.v" Line 21: Empty module <SEnter_2_32> remains a black box.
+WARNING:HDLCompiler:1127 - "D:\iseproj\Org\Org13-Project\top.v" Line 80: Assignment to Ai ignored, since the identifier is never used
 
 Elaborating module <SSeg7_Dev>.
-WARNING:HDLCompiler:1499 - "D:\ISE PROJECT\Org13-Project-master\SSeg7_Dev_IO.v" Line 21: Empty module <SSeg7_Dev> remains a black box.
+WARNING:HDLCompiler:1499 - "D:\iseproj\Org\Org13-Project\SSeg7_Dev_IO.v" Line 21: Empty module <SSeg7_Dev> remains a black box.
 
 Elaborating module <Multi_CPU>.
 
 Elaborating module <M_datapath>.
-WARNING:HDLCompiler:1499 - "D:\ISE PROJECT\Org13-Project-master\M_datapath_IO.v" Line 21: Empty module <M_datapath> remains a black box.
+WARNING:HDLCompiler:1499 - "D:\iseproj\Org\Org13-Project\M_datapath_IO.v" Line 21: Empty module <M_datapath> remains a black box.
 
 Elaborating module <ctrl>.
-WARNING:HDLCompiler:1499 - "D:\ISE PROJECT\Org13-Project-master\mulit_ctrl_IO.v" Line 21: Empty module <ctrl> remains a black box.
+WARNING:HDLCompiler:1499 - "D:\iseproj\Org\Org13-Project\mulit_ctrl_IO.v" Line 21: Empty module <ctrl> remains a black box.
 
 Elaborating module <INV>.
 
 Elaborating module <AND2>.
-WARNING:HDLCompiler:1127 - "D:\ISE PROJECT\Org13-Project-master\top.v" Line 86: Assignment to State ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "D:\iseproj\Org\Org13-Project\top.v" Line 86: Assignment to State ignored, since the identifier is never used
 
 Elaborating module <MEMBANK>.
 
 Elaborating module <UARTER>.
-WARNING:HDLCompiler:1499 - "D:\ISE PROJECT\Org13-Project-master\Code\MEMBANK\UARTER.v" Line 21: Empty module <UARTER> remains a black box.
+WARNING:HDLCompiler:1499 - "D:\iseproj\Org\Org13-Project\Code\MEMBANK\UARTER.v" Line 21: Empty module <UARTER> remains a black box.
 
 Elaborating module <BYTE2WORD>.
-WARNING:HDLCompiler:1499 - "D:\ISE PROJECT\Org13-Project-master\Code\MEMBANK\BYTE2WORD.v" Line 21: Empty module <BYTE2WORD> remains a black box.
+WARNING:HDLCompiler:1499 - "D:\iseproj\Org\Org13-Project\Code\MEMBANK\BYTE2WORD.v" Line 21: Empty module <BYTE2WORD> remains a black box.
 
 Elaborating module <RAM_B>.
-WARNING:HDLCompiler:1499 - "D:\ISE PROJECT\Org13-Project-master\ipcore_dir\RAM_B.v" Line 39: Empty module <RAM_B> remains a black box.
-WARNING:HDLCompiler:189 - "D:\ISE PROJECT\Org13-Project-master\Code\MEMBANK\MEMBANK.v" Line 95: Size mismatch in connection of port <addra>. Formal port size is 10-bit while actual signal size is 12-bit.
-WARNING:HDLCompiler:189 - "D:\ISE PROJECT\Org13-Project-master\top.v" Line 91: Size mismatch in connection of port <Addr>. Formal port size is 12-bit while actual signal size is 74-bit.
+WARNING:HDLCompiler:1499 - "D:\iseproj\Org\Org13-Project\ipcore_dir\RAM_B.v" Line 39: Empty module <RAM_B> remains a black box.
+WARNING:HDLCompiler:189 - "D:\iseproj\Org\Org13-Project\Code\MEMBANK\MEMBANK.v" Line 95: Size mismatch in connection of port <addra>. Formal port size is 10-bit while actual signal size is 12-bit.
+WARNING:HDLCompiler:189 - "D:\iseproj\Org\Org13-Project\top.v" Line 92: Size mismatch in connection of port <Addr>. Formal port size is 12-bit while actual signal size is 74-bit.
 
 Elaborating module <Counter>.
-WARNING:HDLCompiler:1127 - "D:\ISE PROJECT\Org13-Project-master\Counter_3_IO.v" Line 43: Assignment to M2 ignored, since the identifier is never used
-WARNING:HDLCompiler:634 - "D:\ISE PROJECT\Org13-Project-master\Counter_3_IO.v" Line 36: Net <counter1[32]> does not have a driver.
+WARNING:HDLCompiler:1127 - "D:\iseproj\Org\Org13-Project\Counter_3_IO.v" Line 43: Assignment to M2 ignored, since the identifier is never used
+WARNING:HDLCompiler:634 - "D:\iseproj\Org\Org13-Project\Counter_3_IO.v" Line 36: Net <counter1[32]> does not have a driver.
 
 Elaborating module <Multi_8CH32>.
-WARNING:HDLCompiler:1499 - "D:\ISE PROJECT\Org13-Project-master\Multi_8CH32_IO.v" Line 21: Empty module <Multi_8CH32> remains a black box.
+WARNING:HDLCompiler:1499 - "D:\iseproj\Org\Org13-Project\Multi_8CH32_IO.v" Line 21: Empty module <Multi_8CH32> remains a black box.
 
 Elaborating module <SPIO>.
-WARNING:HDLCompiler:1499 - "D:\ISE PROJECT\Org13-Project-master\SPIO_IO.v" Line 21: Empty module <SPIO> remains a black box.
+WARNING:HDLCompiler:1499 - "D:\iseproj\Org\Org13-Project\SPIO_IO.v" Line 21: Empty module <SPIO> remains a black box.
 
 Elaborating module <Seg7_Dev>.
-WARNING:HDLCompiler:1499 - "D:\ISE PROJECT\Org13-Project-master\Seg7_Dev_IO.v" Line 21: Empty module <Seg7_Dev> remains a black box.
+WARNING:HDLCompiler:1499 - "D:\iseproj\Org\Org13-Project\Seg7_Dev_IO.v" Line 21: Empty module <Seg7_Dev> remains a black box.
 
 Elaborating module <PIO>.
-WARNING:HDLCompiler:1499 - "D:\ISE PROJECT\Org13-Project-master\PIO_IO.v" Line 21: Empty module <PIO> remains a black box.
+WARNING:HDLCompiler:1499 - "D:\iseproj\Org\Org13-Project\PIO_IO.v" Line 21: Empty module <PIO> remains a black box.
 
 Elaborating module <MIO_BUS>.
-WARNING:HDLCompiler:1127 - "D:\ISE PROJECT\Org13-Project-master\top.v" Line 114: Assignment to ram_data_in ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "D:\iseproj\Org\Org13-Project\top.v" Line 115: Assignment to ram_data_in ignored, since the identifier is never used
 
 Elaborating module <background>.
-WARNING:HDLCompiler:1499 - "D:\ISE PROJECT\Org13-Project-master\ipcore_dir\background.v" Line 39: Empty module <background> remains a black box.
+WARNING:HDLCompiler:1499 - "D:\iseproj\Org\Org13-Project\ipcore_dir\background.v" Line 39: Empty module <background> remains a black box.
 
 Elaborating module <character>.
-WARNING:HDLCompiler:1499 - "D:\ISE PROJECT\Org13-Project-master\ipcore_dir\character.v" Line 39: Empty module <character> remains a black box.
+WARNING:HDLCompiler:1499 - "D:\iseproj\Org\Org13-Project\ipcore_dir\character.v" Line 39: Empty module <character> remains a black box.
 
 Elaborating module <wall>.
-WARNING:HDLCompiler:1499 - "D:\ISE PROJECT\Org13-Project-master\ipcore_dir\wall.v" Line 39: Empty module <wall> remains a black box.
+WARNING:HDLCompiler:1499 - "D:\iseproj\Org\Org13-Project\ipcore_dir\wall.v" Line 39: Empty module <wall> remains a black box.
 
 Elaborating module <CAI>.
-WARNING:HDLCompiler:1499 - "D:\ISE PROJECT\Org13-Project-master\ipcore_dir\CAI.v" Line 39: Empty module <CAI> remains a black box.
+WARNING:HDLCompiler:1499 - "D:\iseproj\Org\Org13-Project\ipcore_dir\CAI.v" Line 39: Empty module <CAI> remains a black box.
 
 Elaborating module <VRAM>.
-WARNING:HDLCompiler:1499 - "D:\ISE PROJECT\Org13-Project-master\ipcore_dir\VRAM.v" Line 39: Empty module <VRAM> remains a black box.
+WARNING:HDLCompiler:1499 - "D:\iseproj\Org\Org13-Project\ipcore_dir\VRAM.v" Line 39: Empty module <VRAM> remains a black box.
 
 Elaborating module <GPU>.
-WARNING:HDLCompiler:413 - "D:\ISE PROJECT\Org13-Project-master\GPU.v" Line 32: Result of 20-bit expression is truncated to fit in 19-bit target.
+WARNING:HDLCompiler:413 - "D:\iseproj\Org\Org13-Project\GPU.v" Line 32: Result of 20-bit expression is truncated to fit in 19-bit target.
 
 Elaborating module <VGA>.
 
 Elaborating module <ps2_ver2>.
-WARNING:HDLCompiler:634 - "D:\ISE PROJECT\Org13-Project-master\top.v" Line 91: Net <MDi> does not have a driver.
-WARNING:HDLCompiler:552 - "D:\ISE PROJECT\Org13-Project-master\top.v" Line 90: Input port enm is not connected on this instance
+WARNING:HDLCompiler:634 - "D:\iseproj\Org\Org13-Project\top.v" Line 92: Net <MDi> does not have a driver.
+WARNING:HDLCompiler:552 - "D:\iseproj\Org\Org13-Project\top.v" Line 91: Input port enm is not connected on this instance
 
 =========================================================================
 *                           HDL Synthesis                               *
 =========================================================================
 
 Synthesizing Unit <top>.
-    Related source file is "D:\ISE PROJECT\Org13-Project-master\top.v".
-INFO:Xst:3210 - "D:\ISE PROJECT\Org13-Project-master\top.v" line 68: Output port <pulse_out> of the instance <U9> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "D:\ISE PROJECT\Org13-Project-master\top.v" line 79: Output port <Ai> of the instance <M4> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "D:\ISE PROJECT\Org13-Project-master\top.v" line 79: Output port <Bi> of the instance <M4> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "D:\ISE PROJECT\Org13-Project-master\top.v" line 79: Output port <blink> of the instance <M4> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "D:\ISE PROJECT\Org13-Project-master\top.v" line 85: Output port <state> of the instance <U1> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "D:\ISE PROJECT\Org13-Project-master\top.v" line 85: Output port <CPU_MIO> of the instance <U1> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "D:\ISE PROJECT\Org13-Project-master\top.v" line 90: Output port <MAddr> of the instance <U31> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "D:\ISE PROJECT\Org13-Project-master\top.v" line 90: Output port <MBDi> of the instance <U31> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "D:\ISE PROJECT\Org13-Project-master\top.v" line 90: Output port <TESTD> of the instance <U31> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "D:\ISE PROJECT\Org13-Project-master\top.v" line 90: Output port <TxEnd> of the instance <U31> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "D:\ISE PROJECT\Org13-Project-master\top.v" line 90: Output port <mclk> of the instance <U31> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "D:\ISE PROJECT\Org13-Project-master\top.v" line 90: Output port <MWR> of the instance <U31> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "D:\ISE PROJECT\Org13-Project-master\top.v" line 90: Output port <MEN> of the instance <U31> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "D:\ISE PROJECT\Org13-Project-master\top.v" line 103: Output port <GPIOf0> of the instance <U7> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "D:\ISE PROJECT\Org13-Project-master\top.v" line 111: Output port <counter_set> of the instance <U71> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "D:\ISE PROJECT\Org13-Project-master\top.v" line 111: Output port <GPIOf0> of the instance <U71> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "D:\ISE PROJECT\Org13-Project-master\top.v" line 113: Output port <ram_data_in> of the instance <U4> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "D:\ISE PROJECT\Org13-Project-master\top.v" line 139: Output port <rdn> of the instance <vga> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "D:\ISE PROJECT\Org13-Project-master\top.v" line 142: Output port <ready> of the instance <ps2> is unconnected or connected to loadless signal.
+    Related source file is "D:\iseproj\Org\Org13-Project\top.v".
+INFO:Xst:3210 - "D:\iseproj\Org\Org13-Project\top.v" line 68: Output port <pulse_out> of the instance <U9> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\iseproj\Org\Org13-Project\top.v" line 79: Output port <Ai> of the instance <M4> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\iseproj\Org\Org13-Project\top.v" line 79: Output port <Bi> of the instance <M4> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\iseproj\Org\Org13-Project\top.v" line 79: Output port <blink> of the instance <M4> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\iseproj\Org\Org13-Project\top.v" line 85: Output port <state> of the instance <U1> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\iseproj\Org\Org13-Project\top.v" line 85: Output port <CPU_MIO> of the instance <U1> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\iseproj\Org\Org13-Project\top.v" line 91: Output port <MAddr> of the instance <U31> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\iseproj\Org\Org13-Project\top.v" line 91: Output port <MBDi> of the instance <U31> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\iseproj\Org\Org13-Project\top.v" line 91: Output port <TESTD> of the instance <U31> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\iseproj\Org\Org13-Project\top.v" line 91: Output port <TxEnd> of the instance <U31> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\iseproj\Org\Org13-Project\top.v" line 91: Output port <mclk> of the instance <U31> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\iseproj\Org\Org13-Project\top.v" line 91: Output port <MWR> of the instance <U31> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\iseproj\Org\Org13-Project\top.v" line 91: Output port <MEN> of the instance <U31> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\iseproj\Org\Org13-Project\top.v" line 104: Output port <GPIOf0> of the instance <U7> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\iseproj\Org\Org13-Project\top.v" line 112: Output port <counter_set> of the instance <U71> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\iseproj\Org\Org13-Project\top.v" line 112: Output port <GPIOf0> of the instance <U71> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\iseproj\Org\Org13-Project\top.v" line 114: Output port <ram_data_in> of the instance <U4> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\iseproj\Org\Org13-Project\top.v" line 145: Output port <rdn> of the instance <vga> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\iseproj\Org\Org13-Project\top.v" line 148: Output port <ready> of the instance <ps2> is unconnected or connected to loadless signal.
 WARNING:Xst:653 - Signal <MDi> is used but never assigned. This sourceless signal will be automatically connected to value GND.
     Summary:
 	no macro.
 Unit <top> synthesized.
 
 Synthesizing Unit <clk_div>.
-    Related source file is "D:\ISE PROJECT\Org13-Project-master\clk_div.v".
+    Related source file is "D:\iseproj\Org\Org13-Project\clk_div.v".
     Found 32-bit register for signal <clkdiv>.
     Found 32-bit adder for signal <clkdiv[31]_GND_3_o_add_0_OUT> created at line 32.
     Summary:
@@ -297,14 +297,14 @@ Synthesizing Unit <clk_div>.
 Unit <clk_div> synthesized.
 
 Synthesizing Unit <Multi_CPU>.
-    Related source file is "D:\ISE PROJECT\Org13-Project-master\Multi_CPU.vf".
+    Related source file is "D:\iseproj\Org\Org13-Project\Multi_CPU.vf".
 WARNING:Xst:647 - Input <INT> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
     Summary:
 	no macro.
 Unit <Multi_CPU> synthesized.
 
 Synthesizing Unit <MEMBANK>.
-    Related source file is "D:\ISE PROJECT\Org13-Project-master\Code\MEMBANK\MEMBANK.v".
+    Related source file is "D:\iseproj\Org\Org13-Project\Code\MEMBANK\MEMBANK.v".
         COUNTER_MSB = 9
         WIDTH = 8
         DEPTH_BITS = 7
@@ -314,7 +314,7 @@ Synthesizing Unit <MEMBANK>.
 Unit <MEMBANK> synthesized.
 
 Synthesizing Unit <Counter>.
-    Related source file is "D:\ISE PROJECT\Org13-Project-master\Counter_3_IO.v".
+    Related source file is "D:\iseproj\Org\Org13-Project\Counter_3_IO.v".
 WARNING:Xst:647 - Input <clk1> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 WARNING:Xst:647 - Input <clk2> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 WARNING:Xst:653 - Signal <counter1<32>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
@@ -336,7 +336,7 @@ WARNING:Xst:653 - Signal <counter2<32>> is used but never assigned. This sourcel
 Unit <Counter> synthesized.
 
 Synthesizing Unit <MIO_BUS>.
-    Related source file is "D:\ISE PROJECT\Org13-Project-master\MIO_BUS_IO.v".
+    Related source file is "D:\iseproj\Org\Org13-Project\MIO_BUS_IO.v".
 WARNING:Xst:647 - Input <BTN> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 WARNING:Xst:647 - Input <addr_bus<27:19>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 WARNING:Xst:647 - Input <led_out<15:13>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
@@ -370,7 +370,7 @@ WARNING:Xst:647 - Input <rst> is never used. This port will be preserved and lef
 Unit <MIO_BUS> synthesized.
 
 Synthesizing Unit <GPU>.
-    Related source file is "D:\ISE PROJECT\Org13-Project-master\GPU.v".
+    Related source file is "D:\iseproj\Org\Org13-Project\GPU.v".
     Found 12-bit register for signal <vga_data>.
     Found 19-bit register for signal <vram_addr>.
     Found 19-bit adder for signal <GND_28_o_PWR_29_o_add_3_OUT> created at line 32.
@@ -384,7 +384,7 @@ Synthesizing Unit <GPU>.
 Unit <GPU> synthesized.
 
 Synthesizing Unit <VGA>.
-    Related source file is "D:\ISE PROJECT\Org13-Project-master\VGA.v".
+    Related source file is "D:\iseproj\Org\Org13-Project\VGA.v".
     Found 10-bit register for signal <v_count>.
     Found 9-bit register for signal <row>.
     Found 10-bit register for signal <col>.
@@ -413,7 +413,7 @@ Synthesizing Unit <VGA>.
 Unit <VGA> synthesized.
 
 Synthesizing Unit <ps2_ver2>.
-    Related source file is "D:\ISE PROJECT\Org13-Project-master\ps2_kb.v".
+    Related source file is "D:\iseproj\Org\Org13-Project\ps2_kb.v".
     Found 4-bit register for signal <cnt>.
     Found 8-bit register for signal <data_in>.
     Found 10-bit register for signal <data>.
@@ -822,8 +822,8 @@ Asynchronous Control Signals Information:
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------+-------+
 Control Signal                                                                                                                                                                                                                                                                | Buffer(FF name)                                                                                                                                  | Load  |
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------+-------+
-frame/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/has_mux_b.B/Mmux_dout_mux_1212(frame/XST_GND:G)                                                                                                                                                       | NONE(frame/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[1].ram.r/v6_init.ram/NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_B) | 364   |
-death/N1(death/XST_GND:G)                                                                                                                                                                                                                                                     | NONE(death/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/v6_init.ram/NO_BMM_INFO.SP.CASCADED_PRIM36.ram_B)  | 72    |
+frame/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/has_mux_b.B/Mmux_dout_mux_1212(frame/XST_GND:G)                                                                                                                                                       | NONE(frame/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[84].ram.r/v6_init.ram/NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram)    | 364   |
+death/N1(death/XST_GND:G)                                                                                                                                                                                                                                                     | NONE(death/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[19].ram.r/v6_init.ram/NO_BMM_INFO.SP.SIMPLE_PRIM36.ram)     | 72    |
 U31/MEM/N0(U31/MEM/XST_GND:G)                                                                                                                                                                                                                                                 | NONE(U31/MEM/U102/Mram_data)                                                                                                                     | 4     |
 U31/MEM/N1(U31/MEM/XST_VCC:P)                                                                                                                                                                                                                                                 | NONE(U31/MEM/U102/Mram_data)                                                                                                                     | 4     |
 U31/MEM/U102/BUS_0002(U31/MEM/U102/Mmux_BUS_000211:O)                                                                                                                                                                                                                         | NONE(U31/MEM/U102/Mram_data)                                                                                                                     | 2     |
@@ -1462,12 +1462,12 @@ clk_100mhz     |    7.266|         |         |         |
 =========================================================================
 
 
-Total REAL time to Xst completion: 43.00 secs
-Total CPU time to Xst completion: 43.38 secs
+Total REAL time to Xst completion: 168.00 secs
+Total CPU time to Xst completion: 168.16 secs
  
 --> 
 
-Total memory usage is 4763948 kilobytes
+Total memory usage is 4874228 kilobytes
 
 Number of errors   :    0 (   0 filtered)
 Number of warnings :  126 (   0 filtered)

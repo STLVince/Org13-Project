@@ -2,8 +2,8 @@
 Release 14.7 Trace  (nt64)
 Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
-D:\HDL\14.7\ISE_DS\ISE\bin\nt64\unwrapped\trce.exe -intstyle ise -v 3 -s 2L -n
-3 -fastpaths -xml top.twx top.ncd -o top.twr top.pcf -ucf ok.ucf
+C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\trce.exe -intstyle ise -v 3 -s 2L
+-n 3 -fastpaths -xml top.twx top.ncd -o top.twr top.pcf -ucf ok.ucf
 
 Design file:              top.ncd
 Physical constraint file: top.pcf
@@ -670,14 +670,14 @@ Design statistics:
 ------------------------------------Footnotes-----------------------------------
 1)  The minimum period statistic assumes all single cycle delays.
 
-Analysis completed Mon Jul 01 17:38:09 2019 
+Analysis completed Thu Jul 04 18:29:11 2019 
 --------------------------------------------------------------------------------
 
 Trace Settings:
 -------------------------
 Trace Settings 
 
-Peak Memory Usage: 5255 MB
+Peak Memory Usage: 5614 MB
 
 
 

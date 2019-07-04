@@ -23,7 +23,7 @@ module MIO_BUS(input clk,
 					input[3:0]BTN,
 					input[15:0]SW,
 					input mem_w,
-					input[31:0]Cpu_data2bus,				//data from CPU
+					input[31:0]Cpu_data2bus,//CPU输入总线的数据
 					input[31:0]addr_bus,
 					input[31:0]ram_data_out,
 					input[15:0]led_out,
@@ -32,13 +32,13 @@ module MIO_BUS(input clk,
 					input counter1_out,
 					input counter2_out,
 					
-					output reg[31:0]Cpu_data4bus,				//write to CPU
-					output reg[31:0]ram_data_in,				//from CPU write to Memory
-					output reg[9:0]ram_addr,					//Memory Address signals
+					output reg[31:0]Cpu_data4bus,//总线返回CPU的数据
+					output reg[31:0]ram_data_in,//内存写
+					output reg[9:0]ram_addr,//内存地址
 					output reg data_ram_we,
-					output reg GPIOf0000000_we,				//PIO写/SW读
-					output reg GPIOe0000000_we,				//七段写
-					output reg counter_we,						//counter写送常数
+					output reg GPIOf0000000_we,			
+					output reg GPIOe0000000_we,			
+					output reg counter_we,					
 					output reg[31:0]Peripheral_in,
 					
 					input [9:0] ps2kb_key,
@@ -46,35 +46,35 @@ module MIO_BUS(input clk,
 					output reg [11:0] vram_data,
 					output reg [18:0] vram_addr,
 					
-					input [11:0] background_data,
-					output reg [9:0] background_addr,
+					input [11:0] background_data,//背景12位颜色
+					output reg [9:0] background_addr,//背景地址
 					
-					input [11:0] character_data,
-					output reg [9:0] character_addr,
+					input [11:0] character_data,//人物12位颜色
+					output reg [9:0] character_addr,//人物地址
 					
-					input [11:0] wall_data,
-					output reg [9:0] wall_addr,
+					input [11:0] wall_data,//障碍12位颜色
+					output reg [9:0] wall_addr,//障碍地址
 					
-					input [11:0] cai_data,
-					output reg [16:0] cai_addr
+					input [11:0] cai_data,//死亡界面12位颜色
+					output reg [16:0] cai_addr//死亡界面地址
 					);	
 
 	reg data_ram_rd, GPIOf0000000_rd, GPIOe0000000_rd, counter_rd, ps2kb_rd, background_rd, character_rd, wall_rd, cai_rd;
-	wire counter_over; //变量定义
+	wire counter_over; 
 
 	always@(posedge clk) begin
-		data_ram_we = 0; //主存写信号
-		data_ram_rd = 0; //主存读信号
-		counter_we = 0; //计数器写信号
-		counter_rd = 0; //计数器读信号
-		GPIOf0000000_we = 0; //设备1：PIO写信号
-		GPIOe0000000_we = 0; //计数器：Counter_x写信号
-		GPIOf0000000_rd = 0; //设备3、4：SW等读信号
-		GPIOe0000000_rd = 0; //设备2：七段显示器写信号
-		ram_addr = 10'h0; //内存物理地址：RAM_B地址
-		ram_data_in = 32'h0; //内存写数据：RAM_B输入数据
-		Peripheral_in=32'h0; //外设总线：CPU输出，外设写入数据
-		ps2kb_rd = 0; //keyborad
+		data_ram_we = 0; 
+		data_ram_rd = 0; 
+		counter_we = 0; 
+		counter_rd = 0; 
+		GPIOf0000000_we = 0; 
+		GPIOe0000000_we = 0; 
+		GPIOf0000000_rd = 0; 
+		GPIOe0000000_rd = 0; 
+		ram_addr = 10'h0; 
+		ram_data_in = 32'h0; 
+		Peripheral_in=32'h0; 
+		ps2kb_rd = 0; 
 		background_rd = 0;
 		background_addr = 10'h0;
 		character_rd = 0;
@@ -87,26 +87,26 @@ module MIO_BUS(input clk,
 		vram_data = 12'h0;
 		vram_addr = 19'h0;
 		case(addr_bus[31:28])
-		4'h0:begin // data_ram (00000000 - 00000ffc, actually lower 4KB RAM)
+		4'h0:begin // ram 
 				data_ram_we = mem_w;
 				ram_addr = addr_bus[11:2];
 				ram_data_in = Cpu_data2bus;
 				data_ram_rd = ~mem_w;
 		end
-		4'he:begin // 七段显示器 (e0000000 - efffffff, SSeg7_Dev)
+		4'he:begin // 七段显示器
 				GPIOe0000000_we = mem_w;
 				Peripheral_in = Cpu_data2bus;
 				GPIOe0000000_rd = ~mem_w;
 		end
-		4'hf:begin // PIO (f0000000 - ffffffff0, 8 LEDs & counter, f000004-fffffff4)
+		4'hf:begin // PIO 
 				if(addr_bus[2])begin    //counter 
 					counter_we = mem_w;
-					Peripheral_in = Cpu_data2bus; //write Counter Value 
+					Peripheral_in = Cpu_data2bus; //Counter写
 					counter_rd = ~mem_w;
 				end
 				else begin     //LED
 					GPIOf0000000_we = mem_w;
-					Peripheral_in = Cpu_data2bus; //write Counter set & Initialization and light LED
+					Peripheral_in = Cpu_data2bus; 
 					GPIOf0000000_rd = ~mem_w;
 				end
 		end
@@ -143,16 +143,16 @@ module MIO_BUS(input clk,
 always @* begin
 	Cpu_data4bus = 32'h0;
 		casex({data_ram_rd,GPIOe0000000_rd,counter_rd,GPIOf0000000_rd, ps2kb_rd, background_rd, character_rd, wall_rd, cai_rd})
-			9'b1xxxxxxxx:Cpu_data4bus = ram_data_out; //read from RAM
-			9'bx1xxxxxxx:Cpu_data4bus = counter_out;  //read from Counter
-			9'bxx1xxxxxx:Cpu_data4bus = counter_out;  //read from Counter
-			9'bxxx1xxxxx:Cpu_data4bus = {counter0_out,counter1_out,counter2_out,led_out[12:0],SW}; //read from SW & BTN
-			9'bxxxx1xxxx:Cpu_data4bus = {{22{1'b0}}, ps2kb_key}; //read from keyborad
+			9'b1xxxxxxxx:Cpu_data4bus = ram_data_out; //RAM读
+			9'bx1xxxxxxx:Cpu_data4bus = counter_out;  //Counter读
+			9'bxx1xxxxxx:Cpu_data4bus = counter_out;  //Counter读
+			9'bxxx1xxxxx:Cpu_data4bus = {counter0_out,counter1_out,counter2_out,led_out[12:0],SW}; //SW&BTN读
+			9'bxxxx1xxxx:Cpu_data4bus = {{22{1'b0}}, ps2kb_key}; //ps2键盘读
 			
-			9'bxxxxx1xxx:Cpu_data4bus = {{20{1'b0}}, background_data}; //read from background
-			9'bxxxxxx1xx:Cpu_data4bus = {{20{1'b0}}, character_data}; //read from character
-			9'bxxxxxxx1x:Cpu_data4bus = {{20{1'b0}}, wall_data}; //read from wall
-			9'bxxxxxxxx1:Cpu_data4bus = {{20{1'b0}}, cai_data}; //read from cai
+			9'bxxxxx1xxx:Cpu_data4bus = {{20{1'b0}}, background_data}; //background读
+			9'bxxxxxx1xx:Cpu_data4bus = {{20{1'b0}}, character_data}; //character读
+			9'bxxxxxxx1x:Cpu_data4bus = {{20{1'b0}}, wall_data}; //wall读
+			9'bxxxxxxxx1:Cpu_data4bus = {{20{1'b0}}, cai_data}; //cai读
 		endcase
 end
 

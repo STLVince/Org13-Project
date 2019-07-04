@@ -63,7 +63,7 @@ wire [31:0] Div, Ai, Bi, Disp_num, inst, CPU2IO, PC, Addr_out, Data_in, Data_out
 wire [11:0] background_data, character_data, wall_data, cai_data;
 wire [9:0] background_addr, character_addr, wall_addr;
 wire [16:0] cai_addr;
-//wire [31:0] location;
+
 
 SAnti_jitter U9	(.RSTN(RSTN), .clk(clk_100mhz), .Key_y(BTN_y), .Key_x(BTN_x), .SW(SW), .readn(readn),
 						.CR(CR), .Key_out(Din), .Key_ready(RDY), .pulse_out(Pulse), .BTN_OK(BTN_OK), 
@@ -87,6 +87,7 @@ Multi_CPU U1		(.clk(Clk_CPU), .reset(rst), .inst_out(inst), .INT(counter0_out), 
 
 //RAM_B U3				(.addra(ram_addr), .wea(data_ram_we), .dina(ram_data_in), .clka(clk_100mhz), .douta(ram_data_out));
 
+//串口，可从PC直接导入coe
 MEMBANK U31 		(.clk(clk_100mhz), .rst(rst), .Start(SW_OK[13]), .PROG(SW_OK[14]), .clkm(~clk_100mhz), .WR(data_ram_we), 
 						.enm(), .Addr({0,0,ram_addr}), .MDi(MDi), .halfPeriod(9'd433), .RXD(RXD), .TXD(TXD), .TxEnd(), .mclk(), 
 						.MWR(), .MEN(), .MAddr(), .MBDi(), .MDo(ram_data_out), .TESTD());
@@ -122,23 +123,28 @@ MIO_BUS U4			(.clk(clk_100mhz), .rst(rst), .BTN(BTN_OK), .SW(SW_OK), .mem_w(mem_
 						.cai_data(cai_data), .cai_addr(cai_addr)
 						);
 
+//地板贴图32*32
 background back 	(.a(background_addr), .spo(background_data));
-					
+
+//人物贴图32*32					
 character player 	(.a(character_addr), .spo(character_data));
 
+//障碍贴图32*32
 wall walls			(.a(wall_addr), .spo(wall_data));
 
+//死亡贴图640*190
 CAI death 			(.clka(clk_100mhz), .addra(cai_addr), .douta(cai_data));	
 
+//显存，双端口ip核
 VRAM frame 			(.clka(clk_100mhz), .wea(vram_we), .addra(vram_w_addr), .dina(vram_data_in), .clkb(Div[1]), 
 						.addrb(vram_r_addr), .doutb(vram_data_out));
-
+//vga辅助模块
 GPU gpu				(.clk(Div[1]), .row(row), .col(col), .vram_addr(vram_r_addr), .vram_data(vram_data_out), .vga_data(vga_data)
 						);
-
+//vga模块
 VGA vga				(.clk(Div[1]), .rst(rst), .Din(vga_data), .row(row), .col(col), .rdn(), 
 						.R(Red), .G(Green), .B(Blue), .HS(HSYNC), .VS(VSYNC));
-
+//ps2模块
 ps2_ver2 ps2		(.clk(clk_100mhz), .rst(rst), .ps2_clk(PS2_clk), .ps2_data(PS2_data), 
 						.data_out(PS2_key), .ready());
 

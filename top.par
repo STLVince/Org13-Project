@@ -1,20 +1,14 @@
 Release 14.7 par P.20131013 (nt64)
 Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
-œÃ”„≈·µƒHP::  Mon Jul 01 17:36:03 2019
+DESKTOP-C9RNUFO::  Thu Jul 04 18:21:32 2019
 
 par -w -intstyle ise -ol high -mt off top_map.ncd top.ncd top.pcf 
 
 
 Constraints file: top.pcf.
-Loading device for application Rf_Device from file '7k160t.nph' in environment D:\HDL\14.7\ISE_DS\ISE\.
+Loading device for application Rf_Device from file '7k160t.nph' in environment C:\Xilinx\14.7\ISE_DS\ISE\.
    "top" is an NCD, version 3.2, device xc7k160t, package ffg676, speed -2l
-vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
-INFO:Security:54 - 'xc7k160t' is a WebPack part.
-WARNING:Security:42 - Your software subscription period has lapsed. Your current version of Xilinx tools will continue
-to function, but you no longer qualify for Xilinx software updates or new releases.
-
-----------------------------------------------------------------------
 
 Initializing temperature to 100.000 Celsius. (default - Range: 0.000 to 100.000 Celsius)
 Initializing voltage to 0.970 Volts. (default - Range: 0.970 to 1.030 Volts)
@@ -111,33 +105,33 @@ Specific Feature Utilization:
 Overall effort level (-ol):   High 
 Router effort level (-rl):    High 
 
-Starting initial Timing Analysis.  REAL time: 20 secs 
-Finished initial Timing Analysis.  REAL time: 20 secs 
+Starting initial Timing Analysis.  REAL time: 1 mins 18 secs 
+Finished initial Timing Analysis.  REAL time: 1 mins 19 secs 
 
 Starting Router
 
 
-Phase  1  : 79446 unrouted;      REAL time: 23 secs 
+Phase  1  : 79446 unrouted;      REAL time: 1 mins 23 secs 
 
-Phase  2  : 59258 unrouted;      REAL time: 25 secs 
+Phase  2  : 59258 unrouted;      REAL time: 1 mins 31 secs 
 
-Phase  3  : 21454 unrouted;      REAL time: 52 secs 
+Phase  3  : 21454 unrouted;      REAL time: 2 mins 30 secs 
 
-Phase  4  : 21454 unrouted; (Setup:0, Hold:15336, Component Switching Limit:0)     REAL time: 58 secs 
+Phase  4  : 21454 unrouted; (Setup:0, Hold:15336, Component Switching Limit:0)     REAL time: 3 mins 53 secs 
 
 Updating file: top.ncd with current fully routed design.
 
-Phase  5  : 0 unrouted; (Setup:0, Hold:14804, Component Switching Limit:0)     REAL time: 1 mins 23 secs 
+Phase  5  : 0 unrouted; (Setup:0, Hold:14804, Component Switching Limit:0)     REAL time: 4 mins 55 secs 
 
-Phase  6  : 0 unrouted; (Setup:0, Hold:14804, Component Switching Limit:0)     REAL time: 1 mins 23 secs 
+Phase  6  : 0 unrouted; (Setup:0, Hold:14804, Component Switching Limit:0)     REAL time: 4 mins 55 secs 
 
-Phase  7  : 0 unrouted; (Setup:0, Hold:14804, Component Switching Limit:0)     REAL time: 1 mins 23 secs 
+Phase  7  : 0 unrouted; (Setup:0, Hold:14804, Component Switching Limit:0)     REAL time: 4 mins 55 secs 
 
-Phase  8  : 0 unrouted; (Setup:0, Hold:14804, Component Switching Limit:0)     REAL time: 1 mins 23 secs 
+Phase  8  : 0 unrouted; (Setup:0, Hold:14804, Component Switching Limit:0)     REAL time: 4 mins 55 secs 
 
-Phase  9  : 0 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 1 mins 33 secs 
-Total REAL time to Router completion: 1 mins 33 secs 
-Total CPU time to Router completion: 1 mins 35 secs 
+Phase  9  : 0 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 5 mins 27 secs 
+Total REAL time to Router completion: 5 mins 27 secs 
+Total CPU time to Router completion: 5 mins 25 secs 
 
 Partition Implementation Status
 -------------------------------
@@ -200,10 +194,10 @@ Generating Pad Report.
 
 All signals are completely routed.
 
-Total REAL time to PAR completion: 1 mins 37 secs 
-Total CPU time to PAR completion: 1 mins 38 secs 
+Total REAL time to PAR completion: 5 mins 46 secs 
+Total CPU time to PAR completion: 5 mins 43 secs 
 
-Peak Memory Usage:  5204 MB
+Peak Memory Usage:  5537 MB
 
 Placer: Placement generated during map.
 Routing: Completed - No errors found.
